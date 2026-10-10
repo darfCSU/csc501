@@ -1,0 +1,9 @@
+I'm excited to be here and looking forward to applying what I learn in this course to some of my personal web projects. As a software engineer, I know that having a good idea and writing the code are only part of the job. Planning, managing resources, and adapting when things don't go as expected are just as important.
+
+I'll fully disclose my skeptism towards the "Adaptive Agile mindset" as corporate hype, but for class purposes keep an open mind.  The promise is the ability to adjust as a project develops. Traditional project management tends to emphasize defining requirements and plans up front, while Agile focuses on breaking work into smaller pieces, getting feedback, and adjusting priorities as you go. You still need goals, deadlines, and accountability, but you don't have to pretend you can predict every challenge before the work begins.
+
+Note: In my experience it results in a lot of JIRA tickets.
+
+One example would be modernizing an older website into a platform for new applications. Rather than trying to build everything at once, I could start with the core functionality, test it, and use what I learn to guide the next phase. That seems like a practical way to reduce risk and avoid spending time on features that may need to change.  The reality is there's going to be a lot of junk PHP that stakeholders (aka IT security) are going to question.
+
+I'm interested in learning how to apply these management principles alongside the technical skills I already use. **How do project managers decide when to adapt the plan and when to hold the team to the original scope and schedule?**
