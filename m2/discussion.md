@@ -2,7 +2,7 @@ In my past experiences as a project manager working with an international team, 
 
 Yes, my prioritization of that is based upon making a kangaroo roadkill earlier in my career driving home from a 2am video meeting.
 
-I would emphasize web-based collaboration platforms and minimize email. A shared platform for tasks, schedules, documents, and discussions keeps everyone working from the same information and provides a central place to track decisions and progress without burying details in email chains.
+I would emphasize web-based collaboration platforms and minimize email. A shared platform for tasks, schedules, documents, and discussions keeps everyone working from the same information and provides a central place to track decisions and progress without burying details in email chains. (I'm being deliberately vague about platforms since most people don't get to decide which.)
 
 I would schedule regular meetings for important discussions but use asynchronous updates when real-time participation isn't necessary. Clear expectations around communication, response times, and decision-making would help, along with awareness of cultural differences and language barriers.
 
