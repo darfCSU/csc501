@@ -1,7 +1,3 @@
-# The Unhappy Stakeholder: Nationwide Hardware Refresh Project
-
-Schumann Hudson Acquisition & Technology
-
 ## Project Management Plan
 
 Schumann Hudson Acquisition & Technology needs to refresh laptops and network equipment for 150 employees distributed across the 48 contiguous United States. The project includes replacing employee laptops and installing one router and two to three switches at each facility. Because the organization operates across multiple states and time zones, the project requires careful scheduling, standardized equipment, coordinated shipping, and reliable on-site support. The project manager must also address the unhappy stakeholder by communicating decisions, explaining trade-offs, and reporting progress consistently.
@@ -10,7 +6,7 @@ Schumann Hudson Acquisition & Technology needs to refresh laptops and network eq
 
 The project will begin with an inventory of existing equipment, site requirements, network capacity, and application dependencies. Each employee will receive a business-class laptop with sufficient memory, storage, processing power, and security features to support daily work. Standardizing laptop models will simplify configuration, troubleshooting, warranty service, and future replacements.
 
-Each site will receive an appropriately sized business-class router and two or three managed switches, depending on its employee count and port requirements. A Cisco Catalyst 8300 Series Edge Platform is a potential router for larger or more demanding branches because it supports enterprise WAN connectivity, VPN, security options, and software-defined WAN capabilities. Smaller sites may require less expensive models. The final selection will depend on bandwidth, security, redundancy, and lifecycle requirements (Cisco, 2026). Managed switches will support centralized configuration, network segmentation, and troubleshooting.
+Each site will receive an appropriately sized business-class router and two or three managed switches, depending on its employee count and port requirements. A Cisco Catalyst 8300 Series Edge Platform is a potential router for larger or more demanding branches because it supports enterprise WAN connectivity, VPN, security options, and software-defined WAN capabilities. Smaller sites may require less expensive models. The final selection will depend on bandwidth, security, redundancy, and life-cycle requirements (Cisco, 2026). Managed switches will support centralized configuration, network segmentation, and troubleshooting.
 
 The project must also account for backend infrastructure. Before deployment, the technical team will verify that existing servers, storage, identity and authentication services, databases, backups, monitoring, and WAN connections can support the refreshed environment. Equipment replacement alone will not resolve performance problems caused by undersized backend systems or incompatible configurations. The team will test these dependencies during the pilot phase.
 
