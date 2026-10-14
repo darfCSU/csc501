@@ -1,3 +1,4 @@
 examples/.ipynb_checkpoints/atsc-checkpoint.pdf
 .ipynb_checkpoints/*
 __pycache__
+.~lock.*#
