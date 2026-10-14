@@ -1,0 +1,15 @@
+
+{
+    "input": "m2/paper.md",
+    "output": "m2/paper.docx",
+    "template": "apa-reference.docx",
+    "apa": {
+        "title": "The Unhappy Stakeholder: Nationwide Hardware Refresh Project",
+        "student": "Mike Hudson",
+        "institution": "Colorado State University Global",
+        "course": "CSC501 Management for the Computer Science Professional",
+        "instructor": "Douglas Mujeye",
+        "due_date": "October 25, 2026"
+    }
+}
+

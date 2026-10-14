@@ -1,0 +1,15 @@
+
+{
+    "input": "m1/system-selection.md",
+    "output": "m1/system-selection.docx",
+    "template": "apa-reference.docx",
+    "apa": {
+        "title": "The Unhappy Stakeholder: Nationwide Hardware Refresh Project",
+        "student": "Your Name",
+        "institution": "Colorado State University Global",
+        "course": "CSC501 Management for the Computer Science Professional",
+        "instructor": "Instructor Name",
+        "due_date": "October 18, 2026"
+    }
+}
+
