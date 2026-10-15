@@ -315,19 +315,43 @@ class MarkdownToDocx:
 
     @staticmethod
     def _format_body(doc):
-        """Apply APA font and spacing to document paragraphs."""
+        """Apply APA font and spacing without adding indents to list items."""
+        numbering_tag = qn("w:numPr")
+
+        def is_list_item(paragraph):
+            # Numbering may be attached directly to the paragraph.
+            p_pr = paragraph._p.pPr
+            if p_pr is not None and p_pr.find(numbering_tag) is not None:
+                return True
+
+            # Or it may be inherited from the paragraph style.
+            style = paragraph.style
+            while style is not None:
+                style_p_pr = style.element.pPr
+                if (
+                    style_p_pr is not None
+                    and style_p_pr.find(numbering_tag) is not None
+                ):
+                    return True
+                style = style.base_style
+
+            return False
+
         for paragraph in doc.paragraphs:
             if paragraph.style.name.startswith("Heading"):
                 paragraph.paragraph_format.first_line_indent = Inches(0)
                 paragraph.paragraph_format.keep_with_next = True
                 MarkdownToDocx._set_paragraph_spacing(paragraph)
-            elif paragraph.text.strip():
-                paragraph.paragraph_format.line_spacing = 2
-                paragraph.paragraph_format.space_before = Pt(0)
-                paragraph.paragraph_format.space_after = Pt(0)
 
-                if paragraph.style.name not in ("Title",):
-                    paragraph.paragraph_format.first_line_indent = Inches(0.5)
+            elif paragraph.text.strip():
+                MarkdownToDocx._set_paragraph_spacing(paragraph)
+
+                if paragraph.style.name != "Title":
+                    if is_list_item(paragraph):
+                        paragraph.paragraph_format.left_indent = Inches(0)
+                        paragraph.paragraph_format.first_line_indent = Inches(0)
+                    else:
+                        paragraph.paragraph_format.first_line_indent = Inches(0.5)
 
             for run in paragraph.runs:
                 if run.font.size is None:
