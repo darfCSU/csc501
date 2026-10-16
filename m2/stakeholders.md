@@ -1,0 +1,107 @@
+# Frosmear Legacy Modernization — Stakeholders
+
+**Company:** Schumann Hudson Acquisition & Technology (SHAT)  
+**Project:** Frosmear Legacy Modernization  
+**Target Platform:** Darfcloud (Docker containers and Django)
+
+## 1. Stakeholder Names and Roles
+
+| # | Stakeholder | Role | Responsibilities / Interests |
+|---:|---|---|---|
+| 1 | Glenda Schumann | Chief Executive Officer (CEO) | Executive sponsor; high power and high interest; considers modernization essential to the company's future. |
+| 2 | Zelda Hudson | Chief Technology Officer (CTO) | Technology executive and steering committee member; directs technical strategy and champions modernization. |
+| 3 | Theresa Hudson | Chief Financial Officer (CFO) | Financial oversight, budgets, investment decisions, and return on investment. Her appointment reflects SHAT's nepotistic management culture. |
+| 4 | Gordie Roberts | Director of Operations | Oversees business operations and organizational transition; concerned about operational disruption. |
+| 5 | Jay Caufield | Legacy Systems Manager | Manages the existing Frosmear.com infrastructure and PHP codebase; initially resistant to modernization. |
+| 6 | Jim Paek | Lead Django/Darfcloud Developer | Leads implementation of the new platform and drives technical decisions. |
+| 7 | Grant Jennings | Information Security Manager | Oversees security architecture, compliance, and risk controls. |
+| 8 | Phil Bourque | Amazon Web Services (AWS) Account Manager | External cloud provider representative; interested in the cloud deployment opportunity. |
+| 9 | Jamie Leach | Microsoft Azure Account Manager | External cloud provider representative; promotes Azure as an alternative cloud platform. |
+| 10 | Peter Taglianetti | Frosmear Power-User Representative | Represents long-term customers concerned with preserving familiar features, accounts, data, and user experience. |
+| 11 | Brad Aitken | Frosmear Casual-User Representative | Represents occasional website users concerned with availability, usability, performance, and continued access. |
+| 12 | Jeff Daniels | Institutional and Investment-Tool Customer Representative | Represents prospective Darfcloud customers interested in investment-analysis capabilities. |
+| 13 | Troy Loney | Shareholder Representative | Represents SHAT shareholders and investors; interested in financial performance, project risk, company value, and return on investment. |
+
+*The hockey-player names are used as fictional character names for this academic exercise. Their assigned business roles and organizational relationships are fictional.*
+
+## 2. Stakeholder Engagement Assessment Matrix
+
+The matrix uses the five engagement levels defined in the project-management course material:
+
+- **Unaware:** The stakeholder does not know the project exists.
+- **Resistant:** The stakeholder does not want the project to succeed and may actively work against it.
+- **Neutral:** The stakeholder is indifferent to the project's success or failure.
+- **Supportive:** The stakeholder believes the project will provide benefits and wants it to succeed.
+- **Leading:** The stakeholder actively participates in ensuring project success.
+
+| Stakeholder | Role | Power / Influence | Current Engagement (C) | Desired Engagement (D) | Engagement Gap | Management Approach |
+|---|---|---|---|---|---|---|
+| Glenda Schumann | CEO | High | Supportive | Leading | Move up one level | Provide executive briefings and involve her in key decisions and project advocacy. |
+| Zelda Hudson | CTO | High | Leading | Leading | None; maintain | Maintain executive coordination and provide timely information for technical decisions. |
+| Theresa Hudson | CFO | High | Neutral | Supportive | Move up two levels | Provide cost estimates, budget forecasts, risk assessments, and return-on-investment analysis. |
+| Gordie Roberts | Director of Operations | Medium-high | Supportive | Leading | Move up one level | Involve him in transition planning, operational readiness reviews, and contingency planning. |
+| Jay Caufield | Legacy Systems Manager | Medium | Resistant | Supportive | Move up three levels | Investigate concerns, involve him in legacy analysis and migration planning, and address role and knowledge-transfer concerns. |
+| Jim Paek | Lead Django/Darfcloud Developer | Medium | Leading | Leading | None; maintain | Keep him empowered and informed; involve him in technical decisions. |
+| Grant Jennings | Information Security Manager | Medium-high | Supportive | Leading | Move up one level | Include him in security architecture reviews, risk assessments, and production release approvals. |
+| Phil Bourque | AWS Account Manager | Medium | Supportive | Supportive | None; maintain | Maintain vendor coordination and clarify cloud service expectations. |
+| Jamie Leach | Azure Account Manager | Medium | Neutral | Neutral | None; maintain | Provide appropriate vendor communications without prioritizing deeper engagement. |
+| Peter Taglianetti | Power-User Representative | Low formal power; high interest | Neutral | Supportive | Move up one level | Conduct user feedback sessions and communicate plans for preserving useful features and account data. |
+| Brad Aitken | Casual-User Representative | Low | Unaware | Supportive | Move up four levels | Explain what is changing, why it is changing, and how users will be affected; provide feedback channels. |
+| Jeff Daniels | Investment-Tool Customer Representative | Low current power; moderate interest | Unaware | Supportive | Move up four levels | Explain planned capabilities and gather prospective-customer requirements. |
+| Troy Loney | Shareholder Representative | High | Neutral | Supportive | Move up one level | Provide periodic project progress, financial performance, risk, and long-term value updates. |
+
+## 3. Five Engagement-Level Use Cases
+
+### Unaware — Brad Aitken, Casual-User Representative
+
+Casual users may not know that Frosmear.com is being modernized. The project team should communicate the purpose of modernization, expected changes, continuity of important features, and opportunities for user feedback.
+
+**Desired outcome:** Move from unaware to supportive through timely communication and customer engagement.
+
+### Resistant — Jay Caufield, Legacy Systems Manager
+
+Jay is concerned that replacing the PHP-based legacy system could diminish the value of his existing knowledge, change his responsibilities, or threaten his team's future.
+
+The project manager should investigate the reasons for his resistance, involve him in technical discussions and migration planning, and address legitimate concerns.
+
+**Desired outcome:** Move from resistant to supportive by addressing concerns and involving him constructively.
+
+### Neutral — Theresa Hudson, CFO
+
+Theresa is primarily concerned with financial performance and is not yet committed to supporting or opposing modernization.
+
+The project manager should provide credible cost estimates, budget forecasts, risk assessments, and return-on-investment analysis.
+
+**Desired outcome:** Move from neutral to supportive by demonstrating the project's financial justification and establishing financial controls.
+
+### Supportive — Gordie Roberts, Director of Operations
+
+Gordie believes modernization will benefit SHAT but is concerned about disruption to existing operations.
+
+The project manager should involve him in transition planning, operational readiness reviews, and contingency planning.
+
+**Desired outcome:** Move from supportive to leading by involving him actively in organizational change and implementation readiness.
+
+### Leading — Zelda Hudson, CTO
+
+Zelda actively supports modernization, provides technical direction, removes organizational obstacles, and advocates for project success.
+
+The project manager should maintain regular executive coordination, involve her in major technical decisions, and ensure she has the information needed to make timely decisions.
+
+**Desired outcome:** Maintain her leading engagement throughout the project.
+
+## 4. Project Context
+
+Frosmear.com is a legacy PHP-based website focused primarily on online games. The modernization project will transform it into Darfcloud, a modern cloud-oriented application platform built using Docker containers and Django.
+
+Darfcloud is intended to support artificial intelligence concepts, general-purpose applications, and tools for evaluating investment opportunities. The project will preserve relevant legacy functionality while establishing a maintainable and scalable foundation for future development.
+
+Key project management concerns include requirements analysis, resource allocation, scheduling, risk management, data migration, security, stakeholder communication, and organizational change.
+
+## 5. Stakeholder Engagement Management Objective
+
+The project manager will evaluate each stakeholder's current engagement level against the desired engagement level and select appropriate communication and management strategies.
+
+Stakeholders already at their desired engagement level should remain informed and engaged. Stakeholders whose current and desired levels differ should receive targeted attention based on their power, influence, interest, urgency, and potential impact on project success.
+
+The overall objective is to align current engagement with desired engagement, minimize resistance, encourage productive participation, and maintain stakeholder support throughout the Frosmear Legacy Modernization project.
