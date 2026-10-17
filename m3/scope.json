@@ -1,0 +1,15 @@
+
+{
+    "input": "m3/scope.md",
+    "output": "m3/scope.docx",
+    "template": "apa-reference.docx",
+    "apa": {
+        "title": "Scope Management – 3D Printer Webpage Development",
+        "student": "Mike Hudson",
+        "institution": "Colorado State University Global",
+        "course": "CSC501 Management for the Computer Science Professional",
+        "instructor": "Douglas Mujeye",
+        "due_date": "November 1, 2026"
+    }
+}
+
