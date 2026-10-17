@@ -1,9 +1,0 @@
-Choosing the correct Python data type is important and I'm going to keep using my side project to manage a personal media library (I call it darfcloud) as my examples for my online classwork.  Its a bit over kill with metadata but. Using the right type makes the information easier to work with as I upgrade it from 2009 to 2026 data standards.  It was originally coded in PHP - don't judge - we all mistakes from our youth.
-
-I use integers for things like file IDs (probably should be hex UUIDs today), file sizes, storage locations, and quality ratings. Strings are used for filenames, titles, and file paths. I use booleans for things that are basically yes or no, such as whether a file has been processed or marked for deletion.
-
-Dictionaries are the most useful data type in this project. Each file has a dictionary containing information such as its filename, title, file size, media type, and storage locations. This lets me access the information by a descriptive name instead of trying to remember which position it is stored in.  The Python lists of dictionaries are simple to convert to store in the database.
-
-I use floats, such as the duration of a video, where decimal values happen. Sets aree useful when I need a collection of unique values, such as different file types.
-
-The main reason for choosing the correct data type is that the data needs to match how I plan to use it. A file size stored as an integer can be compared or calculated, while a filename needs to be a string. It does help the indexing and speed performance - it's running on a woot.com laptop.  One thing I am still wondering about is how much the Python data type should be influenced by the database type when the same information is stored.
