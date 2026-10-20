@@ -1,29 +1,9 @@
-Loops are useful when a program needs to repeat an action on multiple objects with little to no variation. 
-The essential parts of a loop are the starting value or initialization, a condition that determines whether the loop should continue, 
-and some form of change or increment that eventually allows the loop to stop. The exact structure depends on whether the loop is 
-count-controlled or condition-controlled.
+Working for the government for decades I have EXTENSIVE experience dealing with poor leadership.  However, for this assignment we'll keep things positive and use my ongoing fictional class project example.  If Schumann Hudson Acquisition & Technology (SHAT) were brought into a project where the existing team had poor leadership and was consistently missing goals, I would not immediately solve the problem by adding more people/resources. Throwing more money at a problem can make a poorly managed project more complicated if responsibilities and priorities are still unclear.  Besides, my fictional company can't simply print more money.
 
-An example of a count-controlled (definite) loop would be counting the number of files in a folder or iterating through a list of new videos 
-that need to be added to my collection. In this situation the program  has a known group of items to process, so a for loop works well. 
-The loop can go through each file or video, run my ffmpeg script to preconvert them for my kids tablets and then stop wasting electricty
-when there are no more.
+My first step would be to assess the current workload, skills, responsibilities, and project priorities. From there, I would establish clear ownership for each major deliverable and make sure the team understands who is responsible, accountable, consulted, and informed.  For example, on our Darfcloud modernization project, we recently completed a sprint to backport authentication to the legacy Frosmear application. The work initially looked like a relatively small development task. Once we worked through it, however, dependencies involving existing accounts, permissions, database access, and the eventual migration of users became apparent. That experience would influence how I approach resource allocation on the next stage of the project. 
 
-An indefinite (condition-controlled) loop is useful when the number of repetitions is not known ahead of time. I have used this type of loop when 
-dealing with user inputs, like the youTube downloader. The program can continue asking for input until the user provides something valid, which is 
-especially useful for handling the tricks Google does to thwart that (and force my kids to watch ads).  A while loop is a good choice because the 
-program does not know how many attempts will be necessary.
+I would change the budget to reflect the team's actual ability to deliver the project rather than simply assuming that the original staffing plan is adequate. A team that repeatedly misses targets may require additional project management, technical leadership, training, or specialized expertise. Those resources would increase the budget, but the cost should be compared with the potential cost of continued delays, rework, and missed deliverables. 
 
-Pseudocode for validating user input could look like this:
+External resources would be appropriate when the organization lacks a particular skill or needs temporary capacity. For example, SHAT might recommend an outside network specialist (my buddy Doug), security consultant (ChatGPT), or experienced project manager (Glenda) if those capabilities are not available internally. I would favor internal resources when the problem is primarily organizational knowledge, because internal staff already understand the systems and processes. Randomly hiring contractors leads to bankrupcy in the real world.
 
-WHILE True
-    Parse the new URL
-    IF the URL downloads
-        Save the video locally
-        Parse metadata, add to my database
-    ELSE
-        Note in the log it failed
-        Continue to next item
-    Sleep 10 seconds waiting for a new URL
-
-The loop is controlled by a condition rather than a predetermined number of repetitions. Once the user enters valid information, the condition changes 
-and the loop does something.  In this case it's infinite (or until power cycled) but the sleep avoids burning CPU.
+Most importantly, I would treat the leadership problem itself as a project risk. Adding resources without addressing unclear priorities or ineffective decision-making could simply increase the number of people waiting for direction. Establishing clear responsibilities, measurable goals, regular status reviews, and an escalation process would provide a stronger foundation. Once those controls are in place, additional resources can be used strategically to address genuine capacity or skill gaps rather than masking the underlying management problem.
