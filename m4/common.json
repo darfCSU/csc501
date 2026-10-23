@@ -1,15 +1,15 @@
 
 {
     "input": "m4/common.md",
-    "output": "m3/common.docx",
+    "output": "m4/common.docx",
     "template": "apa-reference.docx",
     "apa": {
-        "title": "Scope Management – 3D Printer Webpage Development",
+        "title": "Discovering Common Ground – Frosmear Legacy Modernization",
         "student": "Mike Hudson",
         "institution": "Colorado State University Global",
         "course": "CSC501 Management for the Computer Science Professional",
         "instructor": "Douglas Mujeye",
-        "due_date": "November 1, 2026"
+        "due_date": "November 8, 2026"
     }
 }
 
