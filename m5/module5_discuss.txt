@@ -1,6 +1,3 @@
-The `and` and `or` operators are simple on their own, but they become important when you start putting multiple conditions together. They  let Python make a decision based on more than one piece of information.
-
-The `and` operator returns True only when **both conditions are True**. If either condition is False, the entire expression is False. The `or` operator is a little more forgiving. It returns True when **at least one** of the conditions is True. It only returns False when both conditions are False.
 
 For an `and` example, think about buidling a logging in system for a website. The user needs to have the correct password **and** have the appropriate permissions.
 
