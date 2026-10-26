@@ -1,0 +1,8 @@
+If only 10% of the code passes basic QA, I think we have a bigger problem than bad code. We have a process problem. As project manager, I would tell the team and leadership what the results mean, identify the biggest failure patterns, and temporarily prioritize fixing defects over adding features. Blaming developers won't fix the process, and in my fictional example I can't fire them because I only have one.
+
+This reminds me of Joel Spolsky's old Joel Test, especially his questions about daily builds, tracking bugs, and fixing bugs before writing new code. His point was that good software teams need basic engineering practices to consistently deliver quality software.
+Darfcloud is a good example of a low Joel-test scoring company. Some Frosmear links end up in random places or on undefined pages because of Nginx routing and outdated code references. Testing a page by itself won't necessarily catch that; we need to test how the pieces work together, and invest time into proper unit tests.
+
+I'd bring QA into the process before coding starts, agree on what each feature must do, and run automated checks whenever code changes. For Darfcloud, that means testing important URLs, Nginx routes, and legacy links before changes reach production (aka the internet facing laptop). I'd require code review and passing tests before merging, track defects, and make fixing critical failures a condition of release. The QA pass rate and recurring problems would be reviewed regularly so everyone can see whether things are improving.
+
+The goal isn't to slow development down with more red tape. It's to catch problems earlier, when they're easier to fix, instead of shipping broken features and paying for the same mistakes later. 
