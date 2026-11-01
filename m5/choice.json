@@ -1,0 +1,15 @@
+
+{
+    "input": "m5/choice.md",
+    "output": "m5/choice.docx",
+    "template": "apa-reference.docx",
+    "apa": {
+        "title": "Making a Choice: Evaluating Three Project Opportunities",
+        "student": "Mike Hudson",
+        "institution": "Colorado State University Global",
+        "course": "CSC501 Management for the Computer Science Professional",
+        "instructor": "Douglas Mujeye",
+        "due_date": "November 15, 2026"
+    }
+}
+
