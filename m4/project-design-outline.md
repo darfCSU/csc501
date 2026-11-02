@@ -25,13 +25,13 @@ The project will run from October 1 through December 23, 2026. The schedule uses
 
 | Project Phase | Duration | Start Date | Completion Date | Major Deliverables |
 |---|---:|---|---|---|
-| 1. Planning | 2 weeks | October 1, 2026 | October 14, 2026 | Project charter, scope statement, budget, schedule, stakeholder plan |
-| 2. Current System Assessment | 2 weeks | October 8, 2026 | October 21, 2026 | Legacy inventory, requirements, migration assessment, LAME compatibility review |
-| 3. Architecture and Environments | 2 weeks | October 15, 2026 | October 28, 2026 | Docker/Django/MySQL architecture, environment standards, PITA security requirements |
-| 4. Application Development | 4 weeks | October 22, 2026 | November 18, 2026 | Authentication, permissions, application menu, legacy integration |
-| 5. Data Migration and Security | 3 weeks | November 5, 2026 | November 25, 2026 | Migrated accounts, provisioning procedures, LAME compatibility validation, PITA security controls, backup and recovery procedures |
-| 6. Testing and Deployment | 2 weeks | November 26, 2026 | December 9, 2026 | Functional, security, and integration test results; production deployment; operational handoff |
-| 7. Project Closeout | 2 weeks | December 10, 2026 | December 23, 2026 | Acceptance approval, documentation, lessons learned, maintenance plan |
+| 1. Planning | 2 weeks | October 1, 2026 | October 16, 2026 | Project charter, scope statement, budget, schedule, stakeholder plan |
+| 2. Current System Assessment | 2 weeks | October 12, 2026 | October 23, 2026 | Legacy inventory, requirements, migration assessment, LAME compatibility review |
+| 3. Architecture and Environments | 2 weeks | October 19, 2026 | October 30, 2026 | Docker/Django/MySQL architecture, environment standards, PITA security requirements |
+| 4. Application Development | 4 weeks | October 19, 2026 | November 20, 2026 | Authentication, permissions, application menu, legacy integration |
+| 5. Data Migration and Security | 3 weeks | November 2, 2026 | December 4, 2026 | Migrated accounts, provisioning procedures, LAME compatibility validation, PITA security controls, backup and recovery procedures |
+| 6. Testing and Deployment | 2 weeks | November 23, 2026 | December 18, 2026 | Functional, security, and integration test results; production deployment; operational handoff |
+| 7. Project Closeout | 2 weeks | December 7, 2026 | December 30, 2026 | Acceptance approval, documentation, lessons learned, maintenance plan |
 
 The schedule is aggressive and depends on timely decisions, adequate staffing, and early identification of technical problems. Current-system assessment begins before planning is completely finished, while migration and security activities overlap with application development. LAME will identify legacy dependencies early so they do not become late-stage surprises. PITA will review security requirements throughout development rather than waiting until final testing.
 
