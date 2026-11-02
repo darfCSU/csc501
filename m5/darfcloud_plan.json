@@ -1,0 +1,52 @@
+{
+    "workbook": "frosmear_gantt.xlsx",
+
+    "worksheet": "Project Data",
+    "first_data_row": 4,
+
+    "columns": {
+        "phase": "A",
+        "start_date": "B",
+        "end_date": "C",
+        "teams": "F"
+    },
+
+    "chart": {
+        "title": "Frosmear Legacy Modernization",
+        "subtitle": "Project Schedule | October 1 - December 23, 2026",
+
+        "figure_width": 14,
+        "figure_height": 7,
+        "dpi": 200,
+
+        "bar_height": 0.62,
+
+        "bar_label": "teams",
+        "bar_label_fontsize": 8,
+        "bar_label_color": "white",
+
+        "show_phase_axis_labels": true,
+        "number_phases": false,
+        "time_scale": "weeks",
+
+        "colors": [
+            "#4472C4",
+            "#ED7D31",
+            "#A5A5A5",
+            "#FFC000",
+            "#5B9BD5",
+            "#70AD47",
+            "#8064A2"
+        ],
+
+        "date_format": "%b %d",
+        "show_grid": true,
+
+        "output_directory": ".",
+        "output_basename": "frosmear_gantt",
+        "output_formats": [
+            "png",
+            "pdf"
+        ]
+    }
+}
