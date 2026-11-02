@@ -414,7 +414,7 @@ def generate_chart(config, schedule):
     for output_format in settings["output_formats"]:
         output_format = output_format.lower().lstrip(".")
 
-        if output_format not in ("png", "pdf"):
+        if output_format not in ("png", "jpg", "pdf"):
             raise ValueError(
                 f"Unsupported output format: {output_format}"
             )

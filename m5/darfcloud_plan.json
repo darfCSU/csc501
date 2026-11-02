@@ -46,6 +46,7 @@
         "output_basename": "frosmear_gantt",
         "output_formats": [
             "png",
+            "jpg",
             "pdf"
         ]
     }
