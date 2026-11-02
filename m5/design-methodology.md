@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Frosmear Legacy Modernization project will replace the existing PHP-based Frosmear website with Darfcloud, a modern application platform built with Docker, Django, and MySQL. The project has a target completion date of December 30, 2026 with an estimated budget of $210,000. Its initial release will establish the platform's authentication, application navigation, legacy integration, data migration, security controls, backup procedures, and deployment.
+The Frosmear Legacy Modernization project will replace the existing PHP-based Frosmear website with [Darfcloud](https://www.darfcloud.com), a modern application platform built with Docker, Django, and MySQL. The project has a target completion date of December 30, 2026 with an estimated budget of $210,000. Its initial release will establish the platform's authentication, application navigation, legacy integration, data migration, security controls, backup procedures, and deployment.
 
 A hybrid project management approach is appropriate because the project requires both structured planning and flexibility during development. Predictive planning will establish the scope, budget, architecture, major deliverables, and schedule. Iterative development will allow the technical team to build and validate functionality in increments. This approach provides enough structure to manage a defined modernization effort without assuming that every technical requirement or legacy dependency can be identified before development begins.
 

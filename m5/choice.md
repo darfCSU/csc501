@@ -32,3 +32,6 @@ Jenkin, T. A., Chan, Y. E., & Sabherwal, R. (2019). Mutual understanding in info
 
 Tristancho, C. (2023, August 29). *Project integration management—A quick guide*. ProjectManager. https://www.projectmanager.com/blog/project-integration-management-a-quick-guide
 
+Project Management Institute. (2021). *A guide to the project management body of knowledge (PMBOK® guide)* (7th ed.).
+
+

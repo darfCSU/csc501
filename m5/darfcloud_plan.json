@@ -13,20 +13,23 @@
 
     "chart": {
         "title": "Frosmear Legacy Modernization",
-        "subtitle": "Project Schedule | October 1 - December 23, 2026",
+        "subtitle": "Project Schedule | October 1 - December 30, 2026",
 
-        "figure_width": 14,
-        "figure_height": 7,
+        "figure_width": 11,
+        "figure_height": 8.5,
         "dpi": 200,
 
-        "bar_height": 0.62,
+        "bar_height": 0.75,
 
         "bar_label": "teams",
-        "bar_label_fontsize": 8,
+        "bar_label_fontsize": 13,
         "bar_label_color": "white",
 
         "show_phase_axis_labels": true,
         "number_phases": false,
+        "phase_label_fontsize": 11,
+        "phase_label_max_width": 115,
+
         "time_scale": "weeks",
 
         "colors": [

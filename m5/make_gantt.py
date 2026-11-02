@@ -189,7 +189,7 @@ def wrap_paragraph(paragraph, max_width, renderer, font_properties):
             lines.append(current_line)
             current_line = ""
 
-        # Split individual words that are wider than the bar.
+        # Split individual words that are wider than the available width.
         remaining = word
 
         while remaining:
@@ -250,8 +250,12 @@ def generate_chart(config, schedule):
     bar_label = settings.get("bar_label", "none")
     label_fontsize = settings.get("bar_label_fontsize", 8)
     label_color = settings.get("bar_label_color", "white")
+
     show_phase_axis_labels = settings.get("show_phase_axis_labels", True)
     number_phases = settings.get("number_phases", False)
+
+    phase_label_fontsize = settings.get("phase_label_fontsize", 10)
+    phase_label_max_width = settings.get("phase_label_max_width", 115)
 
     time_scale = settings.get("time_scale", "months").lower()
 
@@ -265,6 +269,12 @@ def generate_chart(config, schedule):
 
     if label_fontsize <= 0:
         raise ValueError("bar_label_fontsize must be greater than zero.")
+
+    if phase_label_fontsize <= 0:
+        raise ValueError("phase_label_fontsize must be greater than zero.")
+
+    if phase_label_max_width <= 0:
+        raise ValueError("phase_label_max_width must be greater than zero.")
 
     figure, axis = plt.subplots(
         figsize=(
@@ -300,8 +310,13 @@ def generate_chart(config, schedule):
             phase_labels = phases
 
         axis.set_yticklabels(phase_labels)
-        axis.set_ylabel("Project Phase")
+        axis.set_ylabel("")
+        axis.tick_params(
+            axis="y",
+            labelsize=phase_label_fontsize
+        )
     else:
+        phase_labels = []
         axis.set_yticklabels([])
         axis.set_ylabel("")
 
@@ -357,7 +372,38 @@ def generate_chart(config, schedule):
     axis.set_axisbelow(True)
     axis.set_xlabel("Project Timeline")
 
-    # Establish the final axis dimensions before measuring label widths.
+    # Draw once to obtain a renderer for accurate text measurements.
+    figure.canvas.draw()
+    renderer = figure.canvas.get_renderer()
+
+    # Wrap phase labels to the configured maximum width.
+    if show_phase_axis_labels:
+        phase_font_properties = FontProperties(
+            size=phase_label_fontsize
+        )
+
+        max_phase_width_pixels = (
+            phase_label_max_width * figure.dpi / 72
+        )
+
+        wrapped_phase_labels = [
+            "\n".join(
+                wrap_paragraph(
+                    label,
+                    max_phase_width_pixels,
+                    renderer,
+                    phase_font_properties
+                )
+            )
+            for label in phase_labels
+        ]
+
+        axis.set_yticklabels(
+            wrapped_phase_labels,
+            fontsize=phase_label_fontsize
+        )
+
+    # Recalculate layout using the wrapped phase labels.
     figure.tight_layout()
     figure.canvas.draw()
 
