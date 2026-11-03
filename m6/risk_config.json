@@ -1,6 +1,6 @@
 {
     "source": {
-        "markdown_file": "risk-matrix.md",
+        "markdown_file": "risk_defs.md",
         "risk_register_heading": "## Project Risk Register",
         "swot_heading": "## SWOT Analysis",
 
@@ -21,7 +21,7 @@
 
     "project": {
         "name": "Frosmear Legacy Modernization",
-        "subtitle": "Darfcloud | Docker, Django, MySQL | $210,000",
+        "subtitle": "Darfcloud | October 1 - December 30 | $210,000",
 
         "matrix_title": "PROJECT RISK MATRIX",
         "swot_title": "PROJECT SWOT ANALYSIS",
@@ -187,11 +187,12 @@
         "register_bar_width": 0.16,
         "register_bar_height": 0.8,
         "register_wrap_width": 48,
-        "register_text_font_size": 11,
-        "register_detail_font_size": 12,
-        "register_owner_font_size": 11,
-        "register_rating_font_size": 11,
-        "register_heading_font_size": 10,
+        "register_heading_y": -0.70,
+        "register_text_font_size": 13,
+        "register_detail_font_size": 14,
+        "register_owner_font_size": 13,
+        "register_rating_font_size": 13,
+        "register_heading_font_size": 12,
         "register_line_start": 0.25,
         "register_line_end": 9.7,
         "register_divider_width": 0.8,
@@ -210,3 +211,4 @@
         "risk_register": "frosmear_risk_register.png"
     }
 }
+
