@@ -64,6 +64,8 @@
     },
 
     "swot": {
+        "bullet": "•",
+
         "quadrants": [
             {
                 "key": "strengths",
@@ -151,10 +153,8 @@
         "subtitle_font_size": 10,
 
         "matrix_figure_size": [11, 8],
-        "matrix_left": 0.18,
-        "matrix_right": 0.92,
-        "matrix_top": 0.82,
-        "matrix_bottom": 0.20,
+        "matrix_axes_size": 0.52,
+        "matrix_axes_bottom": 0.20,
         "cell_border_width": 4,
         "axis_font_size": 12,
         "axis_label_font_size": 12,
