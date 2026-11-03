@@ -1,0 +1,212 @@
+{
+    "source": {
+        "markdown_file": "risk-matrix.md",
+        "risk_register_heading": "## Project Risk Register",
+        "swot_heading": "## SWOT Analysis",
+
+        "risk_columns": {
+            "id": "ID",
+            "description": "Risk",
+            "probability": "Probability",
+            "severity": "Severity",
+            "rating": "Rating",
+            "owner": "Owner"
+        },
+
+        "swot_columns": {
+            "category": "Category",
+            "factors": "Project Factors"
+        }
+    },
+
+    "project": {
+        "name": "Frosmear Legacy Modernization",
+        "subtitle": "Darfcloud | Docker, Django, MySQL | $210,000",
+
+        "matrix_title": "PROJECT RISK MATRIX",
+        "swot_title": "PROJECT SWOT ANALYSIS",
+        "register_title": "PROJECT RISK REGISTER"
+    },
+
+    "matrix": {
+        "probabilities": [
+            "Likely",
+            "Possible",
+            "Unlikely"
+        ],
+
+        "severities": [
+            "Negligible",
+            "Moderate",
+            "Critical"
+        ],
+
+        "probability_axis_label": "PROBABILITY OF OCCURRENCE",
+        "severity_axis_label": "SEVERITY OF RISK",
+
+        "ratings": {
+            "Likely": {
+                "Negligible": "Medium",
+                "Moderate": "High",
+                "Critical": "High"
+            },
+            "Possible": {
+                "Negligible": "Low",
+                "Moderate": "Medium",
+                "Critical": "High"
+            },
+            "Unlikely": {
+                "Negligible": "Low",
+                "Moderate": "Low",
+                "Critical": "Medium"
+            }
+        }
+    },
+
+    "swot": {
+        "quadrants": [
+            {
+                "key": "strengths",
+                "title": "STRENGTHS",
+                "x": 0,
+                "y": 1,
+                "color": "#218C5B",
+                "text_color": "#FFFFFF"
+            },
+            {
+                "key": "weaknesses",
+                "title": "WEAKNESSES",
+                "x": 1,
+                "y": 1,
+                "color": "#F2C94C",
+                "text_color": "#493B00"
+            },
+            {
+                "key": "opportunities",
+                "title": "OPPORTUNITIES",
+                "x": 0,
+                "y": 0,
+                "color": "#3977A8",
+                "text_color": "#FFFFFF"
+            },
+            {
+                "key": "threats",
+                "title": "THREATS",
+                "x": 1,
+                "y": 0,
+                "color": "#C0392B",
+                "text_color": "#FFFFFF"
+            }
+        ]
+    },
+
+    "register": {
+        "columns": {
+            "risk": {
+                "x": 0.35,
+                "label": "IDENTIFIED RISK"
+            },
+            "probability_severity": {
+                "x": 6.0,
+                "label": "PROBABILITY / SEVERITY"
+            },
+            "owner": {
+                "x": 7.5,
+                "label": "OWNER"
+            },
+            "rating": {
+                "x": 9.2,
+                "label": "RATING"
+            }
+        }
+    },
+
+    "style": {
+        "background": "#F4F6F9",
+        "grid_color": "#FFFFFF",
+        "text_color": "#202733",
+        "title_color": "#172B4D",
+        "subtitle_color": "#58677C",
+        "register_divider_color": "#D7DDE5",
+
+        "risk_colors": {
+            "Low": "#218C5B",
+            "Medium": "#F2C94C",
+            "High": "#C0392B"
+        },
+
+        "rating_text_colors": {
+            "Low": "#FFFFFF",
+            "Medium": "#493B00",
+            "High": "#FFFFFF"
+        },
+
+        "font_family": "DejaVu Sans",
+        "font_size": 10,
+
+        "header_x": 0.06,
+        "header_y": 0.95,
+        "subtitle_y": 0.905,
+        "title_font_size": 22,
+        "subtitle_font_size": 10,
+
+        "matrix_figure_size": [11, 8],
+        "matrix_left": 0.18,
+        "matrix_right": 0.92,
+        "matrix_top": 0.82,
+        "matrix_bottom": 0.20,
+        "cell_border_width": 4,
+        "axis_font_size": 12,
+        "axis_label_font_size": 12,
+        "axis_label_padding": 15,
+        "rating_font_size": 13,
+        "risk_id_font_size": 12,
+        "risk_separator": "  ",
+
+        "swot_figure_size": [12, 9],
+        "swot_border_width": 5,
+        "swot_left": 0.07,
+        "swot_right": 0.93,
+        "swot_top": 0.83,
+        "swot_bottom": 0.08,
+        "swot_text_padding": 0.09,
+        "swot_title_y": 0.88,
+        "swot_body_y": 0.75,
+        "swot_title_font_size": 16,
+        "swot_body_font_size": 12,
+        "swot_wrap_width": 39,
+        "swot_line_spacing": 1.5,
+
+        "register_figure_width": 13,
+        "register_min_height": 7,
+        "register_row_height": 1.25,
+        "register_extra_height": 2,
+        "register_x_min": 0,
+        "register_x_max": 10,
+        "register_bar_x": 0.08,
+        "register_bar_width": 0.16,
+        "register_bar_height": 0.8,
+        "register_wrap_width": 48,
+        "register_text_font_size": 11,
+        "register_detail_font_size": 12,
+        "register_owner_font_size": 11,
+        "register_rating_font_size": 11,
+        "register_heading_font_size": 10,
+        "register_line_start": 0.25,
+        "register_line_end": 9.7,
+        "register_divider_width": 0.8,
+        "register_left": 0.04,
+        "register_right": 0.97,
+        "register_top": 0.82,
+        "register_bottom": 0.08,
+
+        "output_dpi": 200
+    },
+
+    "output": {
+        "directory": ".",
+        "risk_matrix": "frosmear_risk_matrix.png",
+        "swot": "frosmear_swot.png",
+        "risk_register": "frosmear_risk_register.png"
+    }
+}
