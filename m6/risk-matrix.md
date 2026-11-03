@@ -12,22 +12,22 @@ The following SWOT analysis identifies factors that could influence the project'
 
 | Category | Project Factors |
 |---|---|
-| **Strengths** | The project has a defined scope, budget, and delivery target. The Docker, Django, and MySQL architecture provides a modern foundation. Dedicated LAME and PITA teams address legacy compatibility and security concerns. |
-| **Weaknesses** | The existing Frosmear PHP application creates legacy dependencies and integration complexity. Multiple workstreams require coordination, and unexpected rework could affect the schedule. |
-| **Opportunities** | Modernization provides an opportunity to improve security, maintainability, and deployment practices. Darfcloud can also serve as a foundation for future applications and capabilities beyond the initial release. |
-| **Threats** | Unexpected legacy dependencies, data migration problems, security vulnerabilities, integration defects, and deployment difficulties could affect the schedule or initial release. Resource constraints and changing stakeholder expectations could also introduce delays. |
+| **Strengths** | The project has a defined scope, budget, and delivery target. The Docker, Django, and MySQL architecture provides a modern foundation. Staff has extensive experience with established FOSS technologies. |
+| **Weaknesses** | The Frosmear PHP application creates legacy dependencies and integration complexity. Poor past software security practices. Aging hardware and current inflationary replacement costs. Unexpected rework could affect the schedule. |
+| **Opportunities** | Modernization provides an opportunity to improve security, maintainability, and deployment practices. Darfcloud will serve as a foundation for future applications and capabilities beyond the initial release. |
+| **Threats** | Unexpected legacy dependencies, data migration problems, security vulnerabilities, integration defects, and hardware failures could affect the schedule or initial release. Inflation affecting hardware and labor costs. |
 
-The SWOT analysis should be reviewed with project stakeholders through document reviews, brainstorming, interviews, and assumptions analysis. Its findings can be compared against the work breakdown structure and project scope to identify missing activities, validate assumptions, and determine whether additional planning is necessary.
+The SWOT analysis should be reviewed with stakeholders through document reviews, brainstorming, interviews, and assumptions analysis. Its findings will be compared against the work breakdown structure to identify missing activities, validate assumptions, and determine whether additional planning is necessary.
 
 ## Risk Matrix
 
-The project uses a 3×3 risk matrix to evaluate probability and severity. Probability is classified as plausible, occasional, or implausible. Severity is classified as negligible, moderate, or critical. Combining these classifications produces a low, medium, or high risk rating.
+The project uses a 3×3 risk matrix to evaluate probability and severity. Probability is classified as likely, possible, or unlikely. Severity is classified as negligible, moderate, or critical. Combining these classifications produces a low, medium, or high risk rating.
 
 | Probability / Severity | Negligible | Moderate | Critical |
 |---|---|---|---|
-| **Plausible** | Medium | High | High |
-| **Occasional** | Low | Medium | High |
-| **Implausible** | Low | Low | Medium |
+| **Likely** | Medium | High | High |
+| **Possible** | Low | Medium | High |
+| **Unlikely** | Low | Low | Medium |
 
 The matrix provides a consistent way to prioritize risks. High-rated risks require particular attention and planned responses. Medium-rated risks should be monitored and addressed as appropriate, while low-rated risks should remain documented and be reassessed if conditions change.
 
@@ -37,38 +37,38 @@ The following register identifies six risks associated with the modernization pr
 
 | ID | Risk | Probability | Severity | Rating |
 |---|---|---|---|---|
-| R1 | Legacy PHP functionality may not integrate as expected with Darfcloud. | Plausible | Critical | High |
-| R2 | Data migration may result in missing, inconsistent, or corrupted records. | Occasional | Critical | High |
-| R3 | Authentication handoff may introduce security vulnerabilities or prevent legitimate users from accessing the platform. | Occasional | Critical | High |
-| R4 | Development or integration defects may delay completion of the initial release. | Plausible | Moderate | High |
-| R5 | Security testing may identify authorization or data-protection weaknesses requiring rework. | Occasional | Moderate | Medium |
-| R6 | Deployment or operational transition may encounter configuration, backup, or recovery problems. | Implausible | Critical | Medium |
+| R1 | Legacy PHP functionality may not integrate as expected with Darfcloud. | Likely | Critical | High |
+| R2 | Data migration may result in missing, inconsistent, or corrupted records. | Possible | Critical | High |
+| R3 | Authentication handoff may introduce security vulnerabilities or prevent legitimate users from accessing the platform. | Possible | Critical | High |
+| R4 | Development or integration defects may delay completion of the initial release. | Likely | Moderate | High |
+| R5 | Security testing may identify authorization or data-protection weaknesses requiring rework. | Possible | Moderate | Medium |
+| R6 | Deployment or operational transition may encounter configuration, backup, or recovery problems. | Unlikely | Critical | Medium |
 
 ## Risk Synopsis
 
 **R1 – Legacy application compatibility**
 
-The existing Frosmear application was developed using PHP, while Darfcloud uses Django and MySQL within a Docker environment. Differences in application architecture, database access, and existing functionality create the possibility that some legacy capabilities will not integrate as expected. This risk is considered plausible because the project must preserve selected existing functionality while introducing a substantially different platform. If the risk occurs, additional development and testing may be required. Features could be delayed, require redesign, or be excluded from the initial release. Significant compatibility problems could also affect the project's delivery target.
+The existing Frosmear application was developed using PHP, while Darfcloud uses Django and MySQL within a Docker environment. Differences in application architecture, database access, and existing functionality create the possibility that some legacy capabilities will not integrate as expected. This risk is considered likely because the project must preserve selected existing functionality while introducing a substantially different platform. If the risk occurs, additional development and testing may be required. Features could be delayed, require redesign, or be excluded from the initial release. Significant compatibility problems could also affect the project's delivery target.
 
 **R2 – Data migration problems**
 
-Migrating existing information into the new platform introduces the possibility of missing, inconsistent, or corrupted records. Differences in database structures, field formats, and legacy data quality could create problems during conversion. This risk is considered occasional because migration procedures and validation can reduce the likelihood of errors, but they cannot eliminate all uncertainty. If migration problems occur, users may lose access to accurate information or encounter incomplete records. Correcting the data could require additional development time, repeated migrations, and restoration from backups. Serious data integrity problems could delay acceptance and deployment.
+Migrating existing information into the new platform introduces the possibility of missing, inconsistent, or corrupted records. Differences in database structures, field formats, and legacy data quality could create problems during conversion. This risk is considered possible because migration procedures and validation can reduce the likelihood of errors, but they cannot eliminate all uncertainty. If migration problems occur, users may lose access to accurate information or encounter incomplete records. Correcting the data could require additional development time, repeated migrations, and restoration from backups. Serious data integrity problems could delay acceptance and deployment.
 
 **R3 – Authentication and security handoff**
 
-The project requires authentication coordination between the legacy Frosmear application and Darfcloud. Differences in account permissions, session handling, and token exchange could create vulnerabilities or prevent legitimate users from signing in. This risk is considered occasional because authentication changes are technically complex, but the project includes a dedicated PITA team to review security and access controls. If the risk occurs, unauthorized access could expose protected information, while legitimate users could be locked out of the platform. Either outcome could undermine stakeholder confidence and require substantial remediation before deployment. A serious security weakness could prevent release until it is corrected.
+The project requires authentication coordination between the legacy Frosmear application and Darfcloud. Differences in account permissions, session handling, and token exchange could create vulnerabilities or prevent legitimate users from signing in. This risk is considered possible because authentication changes are technically complex, but the project includes a dedicated PITA team to review security and access controls. If the risk occurs, unauthorized access could expose protected information, while legitimate users could be locked out of the platform. Either outcome could undermine stakeholder confidence and require substantial remediation before deployment. A serious security weakness could prevent release until it is corrected.
 
 **R4 – Development and integration delays**
 
-The project has several overlapping workstreams involving application development, legacy compatibility, migration, security, and testing. Although parallel work can improve efficiency, delays in one activity may affect tasks that depend on its completion. This risk is considered plausible because defects and integration issues are common during software development, particularly when replacing an existing application. If development or integration takes longer than planned, testing and deployment may be compressed or postponed. Additional labor could also increase costs. The project may need to defer nonessential functionality to protect the initial release date.
+The project has several overlapping workstreams involving application development, legacy compatibility, migration, security, and testing. Although parallel work can improve efficiency, delays in one activity may affect tasks that depend on its completion. This risk is considered likely because defects and integration issues are common during software development, particularly when replacing an existing application. If development or integration takes longer than planned, testing and deployment may be compressed or postponed. Additional labor could also increase costs. The project may need to defer nonessential functionality to protect the initial release date.
 
 **R5 – Security weaknesses discovered during testing**
 
-Security reviews may uncover weaknesses in authorization, data protection, or application configuration. This risk is considered occasional because security testing is specifically intended to discover problems that may not be apparent during development. The discovery of a weakness does not necessarily indicate that the development process failed, but it may require additional work. If significant vulnerabilities are found late in the schedule, developers may need to redesign components, correct permissions, or repeat testing. These activities could delay deployment and increase project costs. Critical security findings must be resolved before the affected functionality is released.
+Security reviews may uncover weaknesses in authorization, data protection, or application configuration. This risk is considered possible because security testing is specifically intended to discover problems that may not be apparent during development. The discovery of a weakness does not necessarily indicate that the development process failed, but it may require additional work. If significant vulnerabilities are found late in the schedule, developers may need to redesign components, correct permissions, or repeat testing. These activities could delay deployment and increase project costs. Critical security findings must be resolved before the affected functionality is released.
 
 **R6 – Deployment and operational transition problems**
 
-The final transition to the operating environment may encounter configuration differences, backup problems, or recovery issues. This risk is considered implausible because deployment readiness and operational procedures will be reviewed before release. However, the consequences could be critical if the platform cannot operate reliably or data cannot be recovered following a deployment failure. Such a problem could interrupt service, compromise data availability, and delay stakeholder acceptance. The project therefore needs documented deployment procedures, verified backups, and a recovery plan before operational handoff.
+The final transition to the operating environment may encounter configuration differences, backup problems, or recovery issues. This risk is considered unlikely because deployment readiness and operational procedures will be reviewed before release. However, the consequences could be critical if the platform cannot operate reliably or data cannot be recovered following a deployment failure. Such a problem could interrupt service, compromise data availability, and delay stakeholder acceptance. The project therefore needs documented deployment procedures, verified backups, and a recovery plan before operational handoff.
 
 ## Risk Ownership and Response Planning
 
