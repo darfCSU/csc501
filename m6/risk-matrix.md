@@ -35,14 +35,14 @@ The matrix provides a consistent way to prioritize risks. High-rated risks requi
 
 The following register identifies six risks associated with the modernization project.
 
-| ID | Risk | Probability | Severity | Rating |
-|---|---|---|---|---|
-| R1 | Legacy PHP functionality may not integrate as expected with Darfcloud. | Likely | Critical | High |
-| R2 | Data migration may result in missing, inconsistent, or corrupted records. | Possible | Critical | High |
-| R3 | Authentication handoff may introduce security vulnerabilities or prevent legitimate users from accessing the platform. | Possible | Critical | High |
-| R4 | Development or integration defects may delay completion of the initial release. | Likely | Moderate | High |
-| R5 | Security testing may identify authorization or data-protection weaknesses requiring rework. | Possible | Moderate | Medium |
-| R6 | Deployment or operational transition may encounter configuration, backup, or recovery problems. | Unlikely | Critical | Medium |
+| ID | Risk | Probability | Severity | Rating | Owner |
+|---|---|---|---|---|---|
+| R1 | Legacy PHP functionality may not integrate as expected with Darfcloud. | Likely | Critical | High | LAME Lead |
+| R2 | Data migration may result in missing, inconsistent, or corrupted records. | Possible | Critical | High | LAME Lead |
+| R3 | Authentication handoff may introduce security vulnerabilities or prevent legitimate users from accessing the platform. | Possible | Critical | High | PITA Lead |
+| R4 | Development or integration defects may delay completion of the initial release. | Likely | Moderate | High | Project Manager |
+| R5 | Security testing may identify authorization or data-protection weaknesses requiring rework. | Possible | Moderate | Medium | PITA Lead |
+| R6 | Deployment or operational transition may encounter configuration, backup, or recovery problems. | Unlikely | Critical | Medium | Operations Lead |
 
 ## Risk Synopsis
 
