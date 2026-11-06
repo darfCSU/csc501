@@ -9,71 +9,101 @@ Closeout deadline: December 30, 2026
 Estimated project duration: 12 weeks  
 Estimated budget: $210,000
 ---
-1. Executive Summary
+## Executive Summary
+
 Schumann Hudson Innovation & Future Technologies (SHIFT) will modernize Frosmear.com, a legacy PHP-based website, by replacing its existing foundation with Darfcloud, a modern application platform built with Docker containers, Django, and MySQL. The initial release will establish a maintainable platform for future artificial intelligence concepts, general-purpose applications, and investment-analysis tools.
+
 The project must preserve relevant legacy functionality while improving maintainability, security, account management, and deployment practices. The work includes requirements and legacy-system assessment, architecture and environment preparation, application development, authentication integration, data migration, security validation, testing, deployment, and operational transition.
+
 The project will use a hybrid management approach. Predictive planning will establish the scope, budget, schedule, major deliverables, and governance. Iterative development and demonstrations will allow the technical team to validate functionality and respond to findings without losing control of the approved project baseline.
+
 Two specialized teams will address major technical concerns. The Legacy Application Maintenance Engineering (LAME) team will assess legacy PHP functionality, compatibility, and migration dependencies. The Protection, Integrity, Threat Assessments (PITA) team will review authentication, authorization, data integrity, and security controls. The project manager will coordinate these teams with development, operations, executives, and user representatives.
+
 The project has a preliminary budget of $210,000 and a target delivery date of December 23, 2026. The schedule includes closeout activities through December 30. Success will be measured by delivery of the agreed initial-release functionality, validated account data, satisfactory security and integration testing, operational readiness, and stakeholder acceptance.
-2. Background and Project Justification
-Frosmear.com is a legacy PHP-based website that has become a foundation for a broader set of planned applications. Continuing to expand the existing system would preserve technical dependencies and make future development more difficult. Modernization provides an opportunity to establish a cleaner architecture, improve security and deployment practices, and create a platform that can support additional applications over time.
+
+## Background and Project Justification
+
+Frosmear.com is a legacy PHP-based website that has become a foundation for a broader set of planned applications. Continuing to expand the existing system would preserve technical dependencies and make future development exponentially more time consuming. Modernization provides an opportunity to establish a clean architecture, improve security and deployment practices, and create a platform that can support rapid new application development.
+
 Darfcloud will use Docker to package and deploy application services, Django as the web framework, and MySQL for relational data. This technology selection provides a foundation using established technologies while separating the new platform from the legacy implementation.
-The project is not intended to deliver every future Darfcloud application. Its purpose is to establish the platform and complete the core functionality required for an initial release. Advanced AI capabilities, additional applications, and other enhancements will be considered for FY2027 and managed through a separate planning and approval process.
-3. Project Objectives and Success Criteria
+
+The project is not intended to deliver every future Darfcloud application. Its purpose is to establish the platform and complete the core functionality required for an initial release. Advanced AI capabilities, additional applications, and other enhancements will be considered for CY2027 and managed through a separate planning and approval process.
+
+## Project Objectives and Success Criteria
+
 The project objectives are to:
-Establish the Darfcloud application platform using Docker, Django, and MySQL.
-Implement the initial authentication, authorization, and application-navigation capabilities.
-Integrate required functionality with the existing Frosmear environment while limiting unnecessary legacy dependencies.
-Migrate and validate the account data required for the initial release.
-Implement and verify security controls for authentication, authorization, token handling, and data integrity.
-Test application functionality, database operations, legacy integration, deployment, backup, and recovery procedures.
-Deploy the initial release and transfer operational responsibility with appropriate documentation.
+	- Establish the Darfcloud application platform using Docker, Django, and MySQL.
+	- Implement the initial authentication, authorization, and application-navigation capabilities.
+	- Integrate required functionality with the existing Frosmear environment while limiting legacy dependencies.
+	- Migrate and validate the account data required for the initial release.
+	- Implement and verify security controls for authentication, authorization, token handling, and data integrity.
+	- Test application functionality, database operations, legacy integration, deployment, backup, and recovery procedures.
+	- Deploy the initial release and transfer operational responsibility.
+	
 The project will be considered successful when:
-The agreed initial-release functionality is available on the Darfcloud platform.
-Required account data is migrated and validated.
-Authentication and authorization behave as specified, including rejection of expired, reused, or unauthorized authentication tokens.
-Functional, integration, and security testing is completed, with critical defects resolved.
-Deployment, backup, and recovery procedures are tested and documented.
-Operations receives the documentation and access needed to maintain the platform.
-The project sponsor and designated stakeholders accept the completed deliverables.
-4. Project Scope
-4.1 In Scope
+	- The initial-release functionality is available on the Darfcloud platform.
+	- Required account data is migrated and validated.
+	- Authentication and authorization behave as specified
+	- Functional, integration, and security testing is completed.
+	- Deployment, backup, and recovery procedures are tested and documented.
+	- The project sponsor and designated stakeholders accept the completed deliverables.
+	
+## Project Scope
+### In Scope
+
 The initial project scope includes:
-Assessment of the existing Frosmear PHP application and its dependencies.
-Requirements analysis and identification of functionality to preserve.
-Docker, Django, and MySQL architecture and environment preparation.
-Core application authentication and account permissions.
-Application navigation and menu functionality.
-Required integration between the legacy Frosmear application and Darfcloud.
-Account-data migration, mapping, and validation.
-Authentication handoff security, token handling, and authorization testing.
-Functional, integration, security, and deployment testing.
-Backup and recovery validation.
-User feedback, stakeholder acceptance, documentation, and operational handoff.
-4.2 Out of Scope
+	- Assessment of the existing Frosmear PHP application and its dependencies.
+	- Requirements analysis and identification of functionality perservation.
+	-Docker, Django, and MySQL architecture and environment preparation.
+	- Core application authentication and account permissions.
+	- Application navigation and menu functionality.
+	- Required integration between the legacy Frosmear application and Darfcloud.
+	- Account-data migration, mapping, and validation.
+	- Authentication handoff security, token handling, and authorization testing.
+	- Functional, integration, security, and deployment testing.
+	- Backup and recovery validation.
+	- User feedback, stakeholder acceptance, documentation, and operational handoff.
+	
+	
+## Out of Scope
+
 The following items are not part of the initial release unless approved through formal change control:
-Advanced artificial intelligence applications.
-New investment-analysis products beyond the platform foundation and agreed initial functionality.
-Additional applications or major feature expansions planned for FY2027.
-Unrelated redesign or replacement of legacy functionality that is not required for the agreed release.
-Ongoing maintenance and enhancements after the initial operational transition.
-4.3 Scope Management and Change Control
+	- Advanced artificial intelligence applications.
+	- New investment-analysis products beyond the platform foundation and agreed initial functionality.
+	- Additional applications or major feature expansions planned for 2027.
+	- Unrelated redesign or replacement of legacy functionality that is not required for the agreed release.
+	- Ongoing maintenance and enhancements after the initial operational transition.
+	
+## Scope Management and Change Control
+
 The project manager will maintain the approved scope, schedule, and budget baselines. Requirements and deliverables will have measurable acceptance criteria. Stakeholder suggestions and discoveries made during development will be documented and evaluated rather than automatically added to the project.
-Each change request must describe the requested change and its expected effect on scope, schedule, budget, resources, security, technical dependencies, and business value. The project manager will coordinate the assessment with the appropriate leads:
-The CTO will assess architecture and technical impacts.
-LAME will assess legacy compatibility and migration impacts.
-PITA will assess security and data-protection impacts.
-The CFO will assess cost and budget impacts.
-Operations will assess deployment and support impacts.
-The project sponsor or designated steering committee must approve significant changes to the project baselines. Essential security controls will not be removed simply to protect the schedule. If a required change threatens the delivery target, the project manager will present the impact and recommend an appropriate adjustment or deferral of nonessential functionality.
-5. Project Management and Development Approach
+Each change request must describe the requested change and its expected effect on scope, schedule, budget, resources, security, technical dependencies, and business value. 
+
+The project manager will coordinate the assessment with the appropriate leads:
+	- The CTO will assess architecture and technical impacts.
+	- LAME will assess legacy compatibility and migration impacts.
+	- PITA will assess security and data-protection impacts.
+	- The CFO will assess cost and budget impacts.
+	- Operations will assess deployment and support impacts.
+	
+The project sponsor must approve significant changes to the project baselines. Essential security controls will not be removed simply to protect the schedule. If a required change threatens the delivery target, the project manager will present the impact and recommend an appropriate adjustment or deferral of nonessential functionality.
+
+## Project Management and Development Approach
+
 A hybrid project management approach is appropriate because the project requires defined commitments while involving technical uncertainty. Predictive planning will establish the project charter, scope, budget, schedule, major deliverables, responsibilities, and change-control process. Iterative development will allow the team to implement and validate functionality in increments.
+
 The project will begin with requirements analysis and assessment of the existing Frosmear application. The team will identify functionality to preserve, data to migrate, and dependencies between the legacy PHP application and Darfcloud. User representatives will clarify workflows and usability requirements. LAME will document legacy dependencies and compatibility concerns.
+
 The technical team will define the Docker, Django, and MySQL architecture, including application structure, database organization, environment configuration, authentication interfaces, and deployment requirements. Security requirements will be incorporated during design rather than postponed until release. PITA will review authentication, authorization, data integrity, and legacy authentication handoff controls.
+
 Development will proceed in increments. Core functionality will be demonstrated and tested as it becomes available. Feedback and defects will be evaluated against the approved requirements. Data migration and security work may proceed alongside development where dependencies permit. Integration and acceptance testing will verify that the components work together before deployment.
+
 This approach provides a balance between planning and adaptation. The team can respond to information discovered during implementation while maintaining accountability for the agreed deliverables, schedule, and budget.
-6. Work Breakdown and Major Deliverables
+
+## Work Breakdown and Major Deliverables
+
 The following high-level work breakdown organizes the project into manageable phases and deliverables.
+
 Work package	Major activities	Principal deliverables
 1. Project planning	Confirm objectives, requirements, stakeholders, resources, budget, schedule, and governance	Project charter and management baselines
 2. Current-system assessment	Inventory legacy PHP functionality, dependencies, data, and integration requirements	Legacy inventory, requirements, migration assessment
@@ -161,7 +191,9 @@ The project manager will use collaborative, interest-based negotiation rather th
 The teams will review token expiration, single-use enforcement, secure transmission, access authorization, failure handling, and testing. They will distinguish essential security controls from implementation preferences. LAME can recommend an approach compatible with the existing application, while PITA verifies that the approach satisfies agreed security requirements.
 The negotiated requirements will be documented with measurable acceptance criteria. Testing will cover successful handoffs, expired tokens, reused tokens, unauthorized users, and failure scenarios. If testing reveals significant risks or requires additional resources, the project manager will communicate the schedule and cost implications rather than weakening necessary security controls.
 Collaborative planning and objective criteria help convert technical disagreement into shared decision-making. Peters (2002) discusses planning strategies for delivering quality projects, while Rasmussen and Niles (2019) provide an infrastructure-focused perspective on coordinating technical requirements and project execution.
-11. Risk Management
+
+## Risk Management
+
 Risk management will identify potential problems, evaluate their likelihood and impact, assign ownership, and establish appropriate responses. The project manager will coordinate regular risk reviews and update the risk register as conditions change. Risks that occur will be tracked as issues and managed through the project's change-control and communication processes.
 11.1 SWOT Analysis
 Category	Project factors
@@ -185,7 +217,9 @@ R3	Authentication handoff may expose security vulnerabilities or block legitimat
 R4	Development or integration defects may delay completion of the initial release.	Possible	Moderate	Medium	Project manager
 R5	Security testing may identify authorization or data-protection weaknesses.	Possible	Moderate	Medium	PITA lead
 R6	Noncritical hardware failures may require replacement without delaying the project.	Unlikely	Negligible	Low	Operations lead
-11.4 Risk Responses and Monitoring
+
+## Risk Responses and Monitoring
+
 ID	Response
 R1	Monitor legacy dependencies and integration results. Test compatibility incrementally and defer features that cannot be integrated on schedule.
 R2	Use test migrations, validate source data, preserve backups, and establish recovery procedures. Monitor migration accuracy and completeness.
@@ -194,8 +228,11 @@ R4	Monitor milestones, dependencies, and schedule variance. Address delays and d
 R5	Monitor security testing and remediation. Assign corrective work and repeat testing to verify that significant weaknesses are resolved.
 R6	Monitor critical equipment and replacement needs. Maintain an equipment inventory and arrange replacements through operational resources.
 The project manager will coordinate regular reviews, ensure risk owners provide updates, and escalate risks that threaten project objectives. Consistent identification, analysis, response planning, and monitoring help project teams address uncertainty before it threatens delivery (Association for Project Management, 2020; Thomas, n.d.). Risk responses should also reflect the organizational and project context (Maruping et al., 2019).
-12. Testing, Acceptance, and Deployment
+
+## Testing, Acceptance, and Deployment
+
 Testing will verify that the initial release meets its functional, technical, security, and operational requirements. The project team will complete testing before production release and document results and unresolved issues.
+
 Acceptance activities will include:
 Verification of required authentication and account-permission behavior.
 Validation of migrated account data.
@@ -207,15 +244,24 @@ Deployment testing, including restart and recovery procedures.
 Review of application logs and resolution or formal acceptance of significant defects.
 User feedback and stakeholder acceptance.
 Critical defects and unresolved security weaknesses must be corrected before release. Any remaining noncritical issues must be documented, assigned, and formally accepted by the appropriate stakeholders. Deployment will proceed only when required testing and operational-readiness criteria are satisfied.
-13. Maintenance and Project Closeout
+
+## Maintenance and Project Closeout
+
 After deployment and acceptance, operational responsibility will transfer to the designated Operations team. Initial stabilization and maintenance are expected to begin in January 2027 and continue through the first quarter.
+
 Ongoing responsibilities will include system monitoring, security updates, backup verification, recovery testing, account administration, and incident response. LAME will provide legacy-system documentation and compatibility support. PITA will help establish security monitoring, incident escalation, access-control reviews, and periodic validation of security controls.
-Closeout will include formal acceptance, technical and operational documentation, transfer of responsibilities, and a lessons-learned review. The project manager will document unresolved issues and recommendations for future development. Ongoing maintenance and FY2027 enhancements will be managed separately from the initial implementation budget and schedule.
-14. Conclusion
+
+Closeout will include formal acceptance, technical and operational documentation, transfer of responsibilities, and a lessons-learned review. The project manager will document unresolved issues and recommendations for future development. Ongoing maintenance and 2027 enhancements will be managed separately from the initial implementation budget and schedule.
+
+## Conclusion
+
 The Frosmear Legacy Modernization project will establish Darfcloud as a maintainable application platform using Docker, Django, and MySQL. A hybrid management approach provides structure for the project's scope, schedule, budget, stakeholder responsibilities, and risk controls while allowing iterative development and feedback.
+
 The project has a $210,000 preliminary budget, a December 23, 2026 target delivery date, and a December 30 closeout deadline. LAME will address legacy compatibility and migration dependencies, while PITA will focus on security and data integrity. Their involvement throughout the project will help the team identify technical concerns early and coordinate solutions before deployment.
-The initial release will be successful when the agreed functionality is tested, accepted, deployed, and transferred to Operations with the documentation and procedures needed to maintain it. This will provide SHIFT with a foundation for future Darfcloud applications and enhancements.
-References
+
+The initial release will be successful when the agreed functionality is tested, accepted, deployed, and transferred to Operations with the documentation and procedures needed to maintain it. This will provide SHAT with a foundation for future Darfcloud applications and enhancements.
+
+## References
 Association for Project Management. (2020). What is risk management?
 Maruping, L. M., Venkatesh, V., Thong, J. Y. L., & Zhang, X. (2019). A risk mitigation framework for information technology projects: A cultural contingency perspective. Journal of Management Information Systems, 36(1), 120–157. EBSCOhost article
 Peters, L. A. (2002). Eight planning strategies for delivering quality projects. Project Management Institute. https://www.pmi.org/learning/library/planning-strategies-delivering-quality-projects-1052
