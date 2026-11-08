@@ -104,61 +104,78 @@ This approach provides a balance between planning and adaptation. The team can r
 
 The following high-level work breakdown organizes the project into manageable phases and deliverables.
 
-Work package	Major activities	Principal deliverables
-1. Project planning	Confirm objectives, requirements, stakeholders, resources, budget, schedule, and governance	Project charter and management baselines
-2. Current-system assessment	Inventory legacy PHP functionality, dependencies, data, and integration requirements	Legacy inventory, requirements, migration assessment
-3. Architecture and environments	Define Docker/Django/MySQL architecture, environment standards, and security requirements	Architecture and environment specifications
-4. Application development	Implement authentication, permissions, application navigation, and required legacy integration	Tested initial-release application components
-5. Data migration and security	Map and migrate required account data; implement and review security controls	Validated migrated data and security controls
-6. Testing and deployment	Perform functional, integration, security, and deployment testing; prepare operational handoff	Test results, deployment, backup and recovery procedures
-7. Project closeout	Obtain acceptance, complete documentation, transfer responsibilities, and record lessons learned	Acceptance record, operational documentation, closeout report
-7. Schedule and Milestones
-The project is planned to run from October 1 through December 23, 2026, with closeout activities continuing through December 30. Several activities overlap to support the delivery target. Parallel work requires coordination among development, LAME, PITA, and Operations.
-Project phase	Duration	Start	Completion	Major milestone or deliverable
-1. Planning	2 weeks	October 1, 2026	October 16, 2026	Project charter, scope, budget, schedule, stakeholder plan
-2. Current-system assessment	2 weeks	October 12, 2026	October 23, 2026	Legacy inventory, requirements, migration assessment, compatibility review
-3. Architecture and environments	2 weeks	October 19, 2026	October 30, 2026	Docker/Django/MySQL architecture, environment standards, security requirements
-4. Application development	4 weeks	October 19, 2026	November 20, 2026	Authentication, permissions, application menu, legacy integration
-5. Data migration and security	3 weeks	November 2, 2026	December 4, 2026	Migrated accounts, provisioning, compatibility validation, security controls, backup and recovery procedures
-6. Testing and deployment	2 weeks	November 23, 2026	December 18, 2026	Functional, security, and integration testing; deployment; operational handoff
-7. Project closeout	2 weeks	December 7, 2026	December 30, 2026	Acceptance, documentation, lessons learned, maintenance plan
-The schedule permits assessment to begin before planning is completely finished and allows migration and security activities to overlap with development. Testing and production deployment remain dependent on completion of critical integration and security prerequisites.
-December 23, 2026 is the target delivery date. December 30, 2026 is the closeout deadline, providing limited schedule slack for acceptance, documentation, and operational transition. The project manager will monitor dependencies and escalate issues that threaten the delivery target.
-8. Budget and Resource Allocation
+| Work package | Major activities | Principal deliverables |
+|---|---|---|
+| 1. Project planning | Confirm objectives, requirements, stakeholders, resources, budget, schedule, and governance | Project charter and management baselines |
+| 2. Current-system assessment | Inventory legacy PHP functionality, dependencies, data, and integration requirements | Legacy inventory, requirements, migration assessment |
+| 3. Architecture and environments | Define Docker/Django/MySQL architecture, environment standards, and security requirements | Architecture and environment specifications |
+| 4. Application development | Implement authentication, permissions, application navigation, and required legacy integration | Tested initial-release application components |
+| 5. Data migration and security | Map and migrate required account data; implement and review security controls | Validated migrated data and security controls |
+| 6. Testing and deployment | Perform functional, integration, security, and deployment testing; prepare operational handoff | Test results, deployment, backup and recovery procedures |
+| 7. Project closeout | Obtain acceptance, complete documentation, transfer responsibilities, and record lessons learned | Acceptance record, operational documentation, closeout report |
+
+## Schedule and Milestones
+
+The project is planned to run from October 1 through December 30. Several activities overlap to support the delivery target. 
+
+| Project phase | Duration | Start | Completion | Major milestone or deliverable |
+|---|---|---|---|---|
+| 1. Planning | 2 weeks | October 1, 2026 | October 16, 2026 | Project charter, scope, budget, schedule, stakeholder plan |
+| 2. Current-system assessment | 2 weeks | October 12, 2026 | October 23, 2026 | Legacy inventory, requirements, migration assessment, compatibility review |
+| 3. Architecture and environments | 2 weeks | October 19, 2026 | October 30, 2026 | Docker/Django/MySQL architecture, environment standards, security requirements |
+| 4. Application development | 4 weeks | October 19, 2026 | November 20, 2026 | Authentication, permissions, application menu, legacy integration |
+| 5. Data migration and security | 3 weeks | November 2, 2026 | December 4, 2026 | Migrated accounts, provisioning, compatibility validation, security controls, backup and recovery procedures |
+| 6. Testing and deployment | 2 weeks | November 23, 2026 | December 18, 2026 | Functional, security, and integration testing; deployment; operational handoff |
+| 7. Project closeout | 2 weeks | December 7, 2026 | December 30, 2026 | Acceptance, documentation, lessons learned, maintenance plan |
+
+## Budget and Resource Allocation
+
 The preliminary project budget is $210,000. This hypothetical corporate estimate assumes an experienced team, coordinated parallel work, and a defined initial release. It is a planning estimate rather than an approved budget or vendor quotation.
-Budget category	Estimated cost
-Project management and stakeholder coordination	$25,000
-Application development and legacy integration	$65,000
-Data migration and database validation	$25,000
-Security engineering and review	$20,000
-Testing, quality assurance, and deployment	$20,000
-Infrastructure, hosting, and software	$10,000
-Training, documentation, and operational transition	$5,000
-Team-building and stakeholder engagement	$10,000
-Contingency reserve	$30,000
-Total estimated budget	$210,000
-The team-building allocation covers a private suite at a Colorado Avalanche game to recognize contributions and strengthen collaboration across technical and operational groups. The project sponsor must approve this expense, and it cannot take priority over essential development, security, testing, or deployment costs.
+
+| Budget category | Estimated cost |
+|---|---:|
+| Project management and stakeholder coordination | $25,000 |
+| Application development and legacy integration | $65,000 |
+| Data migration and database validation | $25,000 |
+| Security engineering and review | $20,000 |
+| Testing, quality assurance, and deployment | $20,000 |
+| Infrastructure, hosting, and software | $10,000 |
+| Training, documentation, and operational transition | $5,000 |
+| Team-building and stakeholder engagement | $10,000 |
+| Contingency reserve | $30,000 |
+| **Total estimated budget** | **$210,000** |
+
 The contingency reserve is intended for approved responses to unforeseen risks, including legacy dependencies, migration problems, or additional testing. It is not an automatic spending allowance. The project manager and CFO will validate staffing assumptions, labor rates, hosting expenses, software costs, and vendor charges before finalizing the budget.
-8.1 Project Resources and Responsibilities
-Glenda Schumann, CEO: Executive sponsorship, strategic direction, and major decisions.
-Zelda Hudson, CTO: Technical leadership, architecture, and resolution of technical blockers.
-Theresa Hudson, CFO: Budget oversight, cost tracking, and financial analysis.
-Gordie Roberts, Director of Operations: Operational readiness, deployment coordination, and service continuity.
-Jay Caufield, Legacy Systems Manager and LAME lead: Legacy knowledge, PHP compatibility, and migration support.
-Jim Paek, Lead Django/Darfcloud Developer: Application implementation, integration, and technical quality.
-Grant Jennings, Information Security Manager and PITA lead: Security architecture, threat assessments, access controls, and security testing.
-LAME and PITA team members: Legacy assessment, compatibility validation, security reviews, data integrity, and release readiness.
-User representatives: Usability feedback, workflow validation, and acceptance testing.
-Cloud-provider representatives: Hosting and infrastructure guidance as needed.
-9. Stakeholder Management and Communications
+
+### Project Resources and Responsibilities
+
+| Stakeholder | Role and responsibilities |
+|---|---|
+| Glenda Schumann, CEO | Executive sponsorship, strategic direction, and major decisions. |
+| Zelda Hudson, CTO | Technical leadership, architecture, and resolution of technical blockers. |
+| Theresa Hudson, CFO | Budget oversight, cost tracking, and financial analysis. |
+| Gordie Roberts, Director of Operations | Operational readiness, deployment coordination, and service continuity. |
+| Jay Caufield, Legacy Systems Manager and LAME lead | Legacy knowledge, PHP compatibility, and migration support. |
+| Jim Paek, Lead Django/Darfcloud Developer | Application implementation, integration, and technical quality. |
+| Grant Jennings, Information Security Manager and PITA lead | Security architecture, threat assessments, access controls, and security testing. |
+| LAME and PITA team members | Legacy assessment, compatibility validation, security reviews, data integrity, and release readiness. |
+| User representatives | Usability feedback, workflow validation, and acceptance testing. |
+| Cloud-provider representatives | Hosting and infrastructure guidance as needed. |
+
+## Stakeholder Management and Communications
 Stakeholder engagement will reflect each participant's influence, interest, responsibilities, and required level of involvement. The project manager will compare current engagement with desired engagement and use targeted communication to address gaps.
-9.1 Stakeholder Engagement Assessment
+
+### Stakeholder Engagement Assessment
+
 The five engagement levels are:
-Unaware: The stakeholder does not know the project exists.
-Resistant: The stakeholder does not want the project to succeed and may actively work against it.
-Neutral: The stakeholder is indifferent to the project's success or failure.
-Supportive: The stakeholder believes the project will provide benefits and wants it to succeed.
-Leading: The stakeholder actively participates in ensuring project success.
+
+- Unaware: The stakehol
+der does not know the project exists.
+- Resistant: The stakeholder does not want the project to succeed and may actively work against it.
+- Neutral: The stakeholder is indifferent to the project's success or failure.
+- Supportive: The stakeholder believes the project will provide benefits and wants it to succeed.
+- Leading: The stakeholder actively participates in ensuring project success.
+
 Stakeholder	Role	Power / influence	Current engagement	Desired engagement	Management approach
 Glenda Schumann	CEO	High	Supportive	Leading	Provide executive briefings and involve her in key decisions and project advocacy.
 Zelda Hudson	CTO	High	Leading	Leading	Maintain executive coordination and provide timely information for technical decisions.
@@ -173,60 +190,66 @@ Peter Taglianetti	Power-User Representative	Low formal power; high interest	Neut
 Brad Aitken	Casual-User Representative	Low	Unaware	Supportive	Explain what is changing, why it is changing, and how users will be affected; provide feedback channels.
 Jeff Daniels	Investment-Tool Customer Representative	Low current power; moderate interest	Unaware	Supportive	Explain planned capabilities and gather prospective-customer requirements.
 Troy Loney	Shareholder Representative	High	Neutral	Supportive	Provide periodic project progress, financial performance, risk, and long-term value updates.
+
 The stakeholder names and assigned business roles are fictional characters created for this academic project. They do not represent actual involvement by the named individuals.
-9.2 Communication Plan
+
+### Communication Plan
+
 The project manager will use a combination of status reports, milestone reviews, demonstrations, issue escalation, and targeted stakeholder discussions.
-Audience	Information / communication	Purpose
-CEO and steering stakeholders	Milestone status, major risks, decisions, and changes	Maintain sponsorship and timely executive decisions
-CFO	Budget status, forecasts, variance, and change-cost assessments	Maintain financial oversight
-CTO and technical leads	Architecture, dependencies, defects, and technical decisions	Coordinate technical work and resolve blockers
-LAME and PITA	Compatibility findings, security requirements, test results, and unresolved issues	Coordinate legacy and security responsibilities
-Operations	Deployment readiness, backups, recovery, monitoring, and support documentation	Prepare for operational ownership
-User representatives	Demonstrations, workflow reviews, and acceptance testing	Validate usability and required functionality
-Shareholder representative	Periodic progress, risk, financial performance, and expected value	Maintain visibility into project performance
-Communication will be documented so that decisions, responsibilities, and unresolved issues remain visible. Feedback will be evaluated against the approved scope and will not automatically authorize additional work.
-10. Conflict Resolution: LAME and PITA
-A conflict has developed between LAME and PITA over authentication token handoff requirements. LAME wants to preserve compatibility with the existing PHP application and avoid delays caused by extensive legacy changes. PITA prioritizes protection against unauthorized access and token misuse. Both teams support the modernization project, but their competing priorities could affect cost, schedule, and quality.
-The project manager will use collaborative, interest-based negotiation rather than allowing either department to dictate the solution. The shared interests are reliable authentication, protection of user accounts, and delivery within reasonable project constraints.
-The teams will review token expiration, single-use enforcement, secure transmission, access authorization, failure handling, and testing. They will distinguish essential security controls from implementation preferences. LAME can recommend an approach compatible with the existing application, while PITA verifies that the approach satisfies agreed security requirements.
-The negotiated requirements will be documented with measurable acceptance criteria. Testing will cover successful handoffs, expired tokens, reused tokens, unauthorized users, and failure scenarios. If testing reveals significant risks or requires additional resources, the project manager will communicate the schedule and cost implications rather than weakening necessary security controls.
-Collaborative planning and objective criteria help convert technical disagreement into shared decision-making. Peters (2002) discusses planning strategies for delivering quality projects, while Rasmussen and Niles (2019) provide an infrastructure-focused perspective on coordinating technical requirements and project execution.
+
+| Audience | Information / communication | Purpose |
+|---|---|---|
+| CEO and steering stakeholders | Milestone status, major risks, decisions, and changes | Maintain sponsorship and timely executive decisions |
+| CFO | Budget status, forecasts, variance, and change-cost assessments | Maintain financial oversight |
+| CTO and technical leads | Architecture, dependencies, defects, and technical decisions | Coordinate technical work and resolve blockers |
+| LAME and PITA | Compatibility findings, security requirements, test results, and unresolved issues | Coordinate legacy and security responsibilities |
+| Operations | Deployment readiness, backups, recovery, monitoring, and support documentation | Prepare for operational ownership |
+| User representatives | Demonstrations, workflow reviews, and acceptance testing | Validate usability and required functionality |
+| Shareholder representative | Periodic progress, risk, financial performance, and expected value | Maintain visibility into project performance |
 
 ## Risk Management
 
-Risk management will identify potential problems, evaluate their likelihood and impact, assign ownership, and establish appropriate responses. The project manager will coordinate regular risk reviews and update the risk register as conditions change. Risks that occur will be tracked as issues and managed through the project's change-control and communication processes.
-11.1 SWOT Analysis
-Category	Project factors
-Strengths	The project has a defined scope, budget, and delivery target. Docker, Django, and MySQL provide a modern foundation. Staff have experience with established open-source technologies.
-Weaknesses	The Frosmear PHP application creates legacy dependencies and integration complexity. Past software-security practices may require remediation. Aging hardware and unexpected rework could affect schedule and cost.
-Opportunities	Modernization provides an opportunity to improve security, maintainability, and deployment practices. Darfcloud will provide a foundation for future applications and capabilities beyond the initial release.
-Threats	Unexpected legacy dependencies, data-migration problems, security vulnerabilities, integration defects, hardware failures, and inflation affecting hardware and labor costs could affect delivery.
+Risk management will identify potential problems, evaluate their likelihood and impact, assign ownership, and establish appropriate responses. The project manager will coordinate regular risk reviews and update the risk register as conditions change.
+
+### SWOT Analysis
+
+xxxx  Copy stuff from m7 here
+
 The SWOT analysis should be reviewed with stakeholders through document reviews, brainstorming, interviews, and assumptions analysis. Its findings should be compared against the work breakdown to identify missing activities, validate assumptions, and determine whether additional planning is necessary.
+
 11.2 Probability and Severity Matrix
+
 The project uses a 3×3 matrix. Probability is classified as likely, possible, or unlikely. Severity is classified as negligible, moderate, or critical.
+
 Probability / severity	Negligible	Moderate	Critical
 Likely	Medium	High	High
 Possible	Low	Medium	High
 Unlikely	Low	Low	Medium
-High-rated risks require particular attention and planned responses. Medium-rated risks should be monitored and addressed as appropriate. Low-rated risks remain documented and should be reassessed if conditions change.
-11.3 Project Risk Register
-ID	Risk	Probability	Severity	Rating	Owner
-R1	Legacy PHP functionality may not integrate as expected with Darfcloud.	Likely	Critical	High	LAME lead
-R2	Data migration may result in missing, inconsistent, or corrupted records.	Possible	Critical	High	LAME lead
-R3	Authentication handoff may expose security vulnerabilities or block legitimate users.	Possible	Critical	High	PITA lead
-R4	Development or integration defects may delay completion of the initial release.	Possible	Moderate	Medium	Project manager
-R5	Security testing may identify authorization or data-protection weaknesses.	Possible	Moderate	Medium	PITA lead
-R6	Noncritical hardware failures may require replacement without delaying the project.	Unlikely	Negligible	Low	Operations lead
+
+xxxxx copy m7 stuff here
+
+### Project Risk Register
+
+| ID | Risk | Probability | Severity | Rating | Owner |
+|---|---|---|---|---|---|
+| R1 | Legacy PHP functionality may not integrate as expected with Darfcloud. | Likely | Critical | High | LAME lead |
+| R2 | Data migration may result in missing, inconsistent, or corrupted records. | Possible | Critical | High | LAME lead |
+| R3 | Authentication handoff may expose security vulnerabilities or block legitimate users. | Possible | Critical | High | PITA lead |
+| R4 | Development or integration defects may delay completion of the initial release. | Possible | Moderate | Medium | Project manager |
+| R5 | Security testing may identify authorization or data-protection weaknesses. | Possible | Moderate | Medium | PITA lead |
+| R6 | Noncritical hardware failures may require replacement without delaying the project. | Unlikely | Negligible | Low | Operations lead |
 
 ## Risk Responses and Monitoring
 
-ID	Response
-R1	Monitor legacy dependencies and integration results. Test compatibility incrementally and defer features that cannot be integrated on schedule.
-R2	Use test migrations, validate source data, preserve backups, and establish recovery procedures. Monitor migration accuracy and completeness.
-R3	Review authentication, authorization, and token security throughout development. Test the handoff and resolve critical vulnerabilities before release.
-R4	Monitor milestones, dependencies, and schedule variance. Address delays and defer nonessential features when necessary to protect the initial release.
-R5	Monitor security testing and remediation. Assign corrective work and repeat testing to verify that significant weaknesses are resolved.
-R6	Monitor critical equipment and replacement needs. Maintain an equipment inventory and arrange replacements through operational resources.
+| ID | Response |
+|---|---|
+| R1 | Monitor legacy dependencies and integration results. Test compatibility incrementally and defer features that cannot be integrated on schedule. |
+| R2 | Use test migrations, validate source data, preserve backups, and establish recovery procedures. Monitor migration accuracy and completeness. |
+| R3 | Review authentication, authorization, and token security throughout development. Test the handoff and resolve critical vulnerabilities before release. |
+| R4 | Monitor milestones, dependencies, and schedule variance. Address delays and defer nonessential features when necessary to protect the initial release. |
+| R5 | Monitor security testing and remediation. Assign corrective work and repeat testing to verify that significant weaknesses are resolved. |
+| R6 | Monitor critical equipment and replacement needs. Maintain an equipment inventory and arrange replacements through operational resources. |
+
 The project manager will coordinate regular reviews, ensure risk owners provide updates, and escalate risks that threaten project objectives. Consistent identification, analysis, response planning, and monitoring help project teams address uncertainty before it threatens delivery (Association for Project Management, 2020; Thomas, n.d.). Risk responses should also reflect the organizational and project context (Maruping et al., 2019).
 
 ## Testing, Acceptance, and Deployment
@@ -243,7 +266,6 @@ Verification of database operations and data integrity.
 Deployment testing, including restart and recovery procedures.
 Review of application logs and resolution or formal acceptance of significant defects.
 User feedback and stakeholder acceptance.
-Critical defects and unresolved security weaknesses must be corrected before release. Any remaining noncritical issues must be documented, assigned, and formally accepted by the appropriate stakeholders. Deployment will proceed only when required testing and operational-readiness criteria are satisfied.
 
 ## Maintenance and Project Closeout
 
