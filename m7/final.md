@@ -1,17 +1,16 @@
-Frosmear Legacy Modernization
-Integrated Project Plan
-Company: Schumann Hudson Innovation & Future Technologies (SHIFT)  
-Project: Frosmear Legacy Modernization  
-Target platform: Darfcloud — www.darfcloud.com  
-Project start: October 1, 2026  
-Target delivery: December 23, 2026  
-Closeout deadline: December 30, 2026  
-Estimated project duration: 12 weeks  
-Estimated budget: $210,000
+# Frosmear Legacy Modernization Integrated Project Plan
+* Company: Schumann Hudson Acquistions & Technologies (SHAT)  
+* Project: Frosmear Legacy Modernization  
+* Target platform: Darfcloud — www.darfcloud.com  
+* Project start: October 1, 2026  
+* Target delivery: December 23, 2026  
+* Closeout deadline: December 30, 2026  
+* Estimated project duration: 12 weeks  
+* Estimated budget: $210,000
 ---
 ## Executive Summary
 
-Schumann Hudson Innovation & Future Technologies (SHIFT) will modernize Frosmear.com, a legacy PHP-based website, by replacing its existing foundation with Darfcloud, a modern application platform built with Docker containers, Django, and MySQL. The initial release will establish a maintainable platform for future artificial intelligence concepts, general-purpose applications, and investment-analysis tools.
+Schumann Hudson Acquistions & Technologies (SHAT) will modernize Frosmear.com, a legacy PHP-based website, by replacing its existing foundation with Darfcloud, a modern application platform built with Docker containers, Django, and MySQL. The initial release will establish a maintainable platform for future artificial intelligence concepts, general-purpose applications, and investment-analysis tools.
 
 The project must preserve relevant legacy functionality while improving maintainability, security, account management, and deployment practices. The work includes requirements and legacy-system assessment, architecture and environment preparation, application development, authentication integration, data migration, security validation, testing, deployment, and operational transition.
 
@@ -32,47 +31,50 @@ The project is not intended to deliver every future Darfcloud application. Its p
 ## Project Objectives and Success Criteria
 
 The project objectives are to:
-	- Establish the Darfcloud application platform using Docker, Django, and MySQL.
-	- Implement the initial authentication, authorization, and application-navigation capabilities.
-	- Integrate required functionality with the existing Frosmear environment while limiting legacy dependencies.
-	- Migrate and validate the account data required for the initial release.
-	- Implement and verify security controls for authentication, authorization, token handling, and data integrity.
-	- Test application functionality, database operations, legacy integration, deployment, backup, and recovery procedures.
-	- Deploy the initial release and transfer operational responsibility.
-	
+
+- Establish the Darfcloud application platform using Docker, Django, and MySQL.
+- Implement the initial authentication, authorization, and application-navigation capabilities.
+- Integrate required functionality with the existing Frosmear environment while limiting legacy dependencies.
+- Migrate and validate the account data required for the initial release.
+- Implement and verify security controls for authentication, authorization, token handling, and data integrity.
+- Test application functionality, database operations, legacy integration, deployment, backup, and recovery procedures.
+- Deploy the initial release and transfer operational responsibility.
+
 The project will be considered successful when:
-	- The initial-release functionality is available on the Darfcloud platform.
-	- Required account data is migrated and validated.
-	- Authentication and authorization behave as specified
-	- Functional, integration, and security testing is completed.
-	- Deployment, backup, and recovery procedures are tested and documented.
-	- The project sponsor and designated stakeholders accept the completed deliverables.
+
+- The initial-release functionality is available on the Darfcloud platform.
+- Required account data is migrated and validated.
+- Authentication and authorization behave as specified.
+- Functional, integration, and security testing is completed.
+- Deployment, backup, and recovery procedures are tested and documented.
+- The project sponsor and designated stakeholders accept the completed deliverables.
 	
 ## Project Scope
 ### In Scope
 
 The initial project scope includes:
-	- Assessment of the existing Frosmear PHP application and its dependencies.
-	- Requirements analysis and identification of functionality perservation.
-	-Docker, Django, and MySQL architecture and environment preparation.
-	- Core application authentication and account permissions.
-	- Application navigation and menu functionality.
-	- Required integration between the legacy Frosmear application and Darfcloud.
-	- Account-data migration, mapping, and validation.
-	- Authentication handoff security, token handling, and authorization testing.
-	- Functional, integration, security, and deployment testing.
-	- Backup and recovery validation.
-	- User feedback, stakeholder acceptance, documentation, and operational handoff.
-	
+
+- Assessment of the existing Frosmear PHP application and its dependencies.
+- Requirements analysis and identification of functionality preservation.
+- Docker, Django, and MySQL architecture and environment preparation.
+- Core application authentication and account permissions.
+- Application navigation and menu functionality.
+- Required integration between the legacy Frosmear application and Darfcloud.
+- Account-data migration, mapping, and validation.
+- Authentication handoff security, token handling, and authorization testing.
+- Functional, integration, security, and deployment testing.
+- Backup and recovery validation.
+- User feedback, stakeholder acceptance, documentation, and operational handoff.	
 	
 ## Out of Scope
 
 The following items are not part of the initial release unless approved through formal change control:
-	- Advanced artificial intelligence applications.
-	- New investment-analysis products beyond the platform foundation and agreed initial functionality.
-	- Additional applications or major feature expansions planned for 2027.
-	- Unrelated redesign or replacement of legacy functionality that is not required for the agreed release.
-	- Ongoing maintenance and enhancements after the initial operational transition.
+
+- Advanced artificial intelligence applications.
+- New investment-analysis products beyond the platform foundation and agreed initial functionality.
+- Additional applications or major feature expansions planned for 2027.
+- Unrelated redesign or replacement of legacy functionality that is not required for the agreed release.
+- Ongoing maintenance and enhancements after the initial operational transition.
 	
 ## Scope Management and Change Control
 
@@ -92,11 +94,11 @@ The project sponsor must approve significant changes to the project baselines. E
 
 A hybrid project management approach is appropriate because the project requires defined commitments while involving technical uncertainty. Predictive planning will establish the project charter, scope, budget, schedule, major deliverables, responsibilities, and change-control process. Iterative development will allow the team to implement and validate functionality in increments.
 
-The project will begin with requirements analysis and assessment of the existing Frosmear application. The team will identify functionality to preserve, data to migrate, and dependencies between the legacy PHP application and Darfcloud. User representatives will clarify workflows and usability requirements. LAME will document legacy dependencies and compatibility concerns.
+The project will begin with requirements analysis and assessment of the existing Frosmear application. The team will identify functionality to preserve, data to migrate, and dependencies between the legacy PHP application and Darfcloud.
 
-The technical team will define the Docker, Django, and MySQL architecture, including application structure, database organization, environment configuration, authentication interfaces, and deployment requirements. Security requirements will be incorporated during design rather than postponed until release. PITA will review authentication, authorization, data integrity, and legacy authentication handoff controls.
+The technical team will define the Docker, Django, and MySQL architecture, including application structure, database organization, environment configuration, authentication interfaces, and deployment requirements. Security requirements will be incorporated during design rather than postponed until release.
 
-Development will proceed in increments. Core functionality will be demonstrated and tested as it becomes available. Feedback and defects will be evaluated against the approved requirements. Data migration and security work may proceed alongside development where dependencies permit. Integration and acceptance testing will verify that the components work together before deployment.
+Development will proceed in increments. Core functionality will be demonstrated and tested as it becomes available. Feedback and defects will be evaluated against the approved requirements. Data migration and security work may proceed alongside development where dependencies permit. Integration and acceptance testing will verify that the components work together.
 
 This approach provides a balance between planning and adaptation. The team can respond to information discovered during implementation while maintaining accountability for the agreed deliverables, schedule, and budget.
 
@@ -117,6 +119,8 @@ The following high-level work breakdown organizes the project into manageable ph
 ## Schedule and Milestones
 
 The project is planned to run from October 1 through December 30. Several activities overlap to support the delivery target. 
+
+xxxxxxxxxx graphic of gannt chart  
 
 | Project phase | Duration | Start | Completion | Major milestone or deliverable |
 |---|---|---|---|---|
