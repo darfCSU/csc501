@@ -1,0 +1,15 @@
+
+{
+    "input": "m7/final.md",
+    "output": "m7/final.docx",
+    "template": "apa-reference.docx",
+    "apa": {
+        "title": "Portfolio Project - Darfcloud Modernization",
+        "student": "Mike Hudson",
+        "institution": "Colorado State University Global",
+        "course": "CSC501 Management for the Computer Science Professional",
+        "instructor": "Douglas Mujeye",
+        "due_date": "December 4, 2026"
+    }
+}
+
