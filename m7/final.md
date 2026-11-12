@@ -1,16 +1,19 @@
 # Frosmear Legacy Modernization Integrated Project Plan
-* Company: Schumann Hudson Acquistions & Technologies (SHAT)  
-* Project: Frosmear Legacy Modernization  
-* Target platform: Darfcloud — www.darfcloud.com  
-* Project start: October 1, 2026  
-* Target delivery: December 23, 2026  
-* Closeout deadline: December 30, 2026  
-* Estimated project duration: 12 weeks  
-* Estimated budget: $210,000
+
+| **Company** | Schumann Hudson Acquisitions & Technologies (SHAT) |
+|---|---|
+| **Project** | Frosmear Legacy Modernization |
+| **Target Platform** | Darfcloud — [www.darfcloud.com](https://www.darfcloud.com) |
+| **Project Start** | October 1, 2026 |
+| **Target Delivery** | December 23, 2026 |
+| **Estimated Duration** | 12 weeks |
+| **Estimated Budget** | $210,000 |
+
 ---
+
 ## Executive Summary
 
-Schumann Hudson Acquistions & Technologies (SHAT) will modernize Frosmear.com, a legacy PHP-based website, by replacing its existing foundation with Darfcloud, a modern application platform built with Docker containers, Django, and MySQL. The initial release will establish a maintainable platform for future artificial intelligence concepts, general-purpose applications, and investment-analysis tools.
+Schumann Hudson Acquisitions & Technologies (SHAT) will modernize Frosmear.com, a legacy PHP-based website, by replacing its existing foundation with Darfcloud, a modern application platform built with Docker containers, Django, and MySQL. The initial release will establish a maintainable platform for future artificial intelligence concepts, general-purpose applications, and investment-analysis tools.
 
 The project must preserve relevant legacy functionality while improving maintainability, security, account management, and deployment practices. The work includes requirements and legacy-system assessment, architecture and environment preparation, application development, authentication integration, data migration, security validation, testing, deployment, and operational transition.
 
@@ -22,9 +25,11 @@ The project has a preliminary budget of $210,000 and a target delivery date of D
 
 ## Background and Project Justification
 
-Frosmear.com is a legacy PHP-based website that has become a foundation for a broader set of planned applications. Continuing to expand the existing system would preserve technical dependencies and make future development exponentially more time consuming. Modernization provides an opportunity to establish a clean architecture, improve security and deployment practices, and create a platform that can support rapid new application development.
+[Frosmear.com](https://www.frosmear.com/) is a legacy PHP-based website that has become a foundation for a broader set of planned applications. Continuing to expand the existing system would preserve technical dependencies and make future development exponentially more time-consuming. Modernization provides an opportunity to establish a clean architecture, improve security and deployment practices, and create a platform that can support rapid new application development.
 
-Darfcloud will use Docker to package and deploy application services, Django as the web framework, and MySQL for relational data. This technology selection provides a foundation using established technologies while separating the new platform from the legacy implementation.
+[Darfcloud](https://www.darfcloud.com/) will use Docker to package and deploy application services, Django as its web framework, and MySQL for relational data. These established technologies were selected for maintainability, long-term support, security, deployment flexibility, and compatibility with the existing environment. They also provide a foundation for future applications while keeping the new platform separate from the legacy PHP implementation.
+
+Docker provides consistent packaging across development and deployment environments. Django offers an established application framework with built-in authentication capabilities, while MySQL stores account and application data. Together, these technologies replace the legacy foundation without carrying its implementation dependencies into the new platform.
 
 The project is not intended to deliver every future Darfcloud application. Its purpose is to establish the platform and complete the core functionality required for an initial release. Advanced AI capabilities, additional applications, and other enhancements will be considered for CY2027 and managed through a separate planning and approval process.
 
@@ -48,14 +53,15 @@ The project will be considered successful when:
 - Functional, integration, and security testing is completed.
 - Deployment, backup, and recovery procedures are tested and documented.
 - The project sponsor and designated stakeholders accept the completed deliverables.
-	
+
 ## Project Scope
+
 ### In Scope
 
 The initial project scope includes:
 
 - Assessment of the existing Frosmear PHP application and its dependencies.
-- Requirements analysis and identification of functionality preservation.
+- Requirements analysis and identification of functionality to preserve.
 - Docker, Django, and MySQL architecture and environment preparation.
 - Core application authentication and account permissions.
 - Application navigation and menu functionality.
@@ -64,8 +70,8 @@ The initial project scope includes:
 - Authentication handoff security, token handling, and authorization testing.
 - Functional, integration, security, and deployment testing.
 - Backup and recovery validation.
-- User feedback, stakeholder acceptance, documentation, and operational handoff.	
-	
+- User feedback, stakeholder acceptance, documentation, and operational handoff.
+
 ## Out of Scope
 
 The following items are not part of the initial release unless approved through formal change control:
@@ -75,28 +81,30 @@ The following items are not part of the initial release unless approved through 
 - Additional applications or major feature expansions planned for 2027.
 - Unrelated redesign or replacement of legacy functionality that is not required for the agreed release.
 - Ongoing maintenance and enhancements after the initial operational transition.
-	
+
 ## Scope Management and Change Control
 
 The project manager will maintain the approved scope, schedule, and budget baselines. Requirements and deliverables will have measurable acceptance criteria. Stakeholder suggestions and discoveries made during development will be documented and evaluated rather than automatically added to the project.
-Each change request must describe the requested change and its expected effect on scope, schedule, budget, resources, security, technical dependencies, and business value. 
+
+Each change request must describe the requested change and its expected effect on scope, schedule, budget, resources, security, technical dependencies, and business value.
 
 The project manager will coordinate the assessment with the appropriate leads:
-	- The CTO will assess architecture and technical impacts.
-	- LAME will assess legacy compatibility and migration impacts.
-	- PITA will assess security and data-protection impacts.
-	- The CFO will assess cost and budget impacts.
-	- Operations will assess deployment and support impacts.
-	
+
+- The CTO will assess architecture and technical impacts.
+- LAME will assess legacy compatibility and migration impacts.
+- PITA will assess security and data-protection impacts.
+- The CFO will assess cost and budget impacts.
+- Operations will assess deployment and support impacts.
+
 The project sponsor must approve significant changes to the project baselines. Essential security controls will not be removed simply to protect the schedule. If a required change threatens the delivery target, the project manager will present the impact and recommend an appropriate adjustment or deferral of nonessential functionality.
 
 ## Project Management and Development Approach
 
-A hybrid project management approach is appropriate because the project requires defined commitments while involving technical uncertainty. Predictive planning will establish the project charter, scope, budget, schedule, major deliverables, responsibilities, and change-control process. Iterative development will allow the team to implement and validate functionality in increments.
+A hybrid project management approach is appropriate because the project requires defined commitments while involving technical uncertainty. Predictive planning will establish the project charter, scope, budget, schedule, major deliverables, responsibilities, and change-control process. Iterative development will allow the team to implement and validate functionality in increments. This combination reflects the hybrid life-cycle approach described by the Project Management Institute (PMI, 2017), in which predictive and agile practices can be selected to fit a project's characteristics rather than forcing every activity into a single method.
 
 The project will begin with requirements analysis and assessment of the existing Frosmear application. The team will identify functionality to preserve, data to migrate, and dependencies between the legacy PHP application and Darfcloud.
 
-The technical team will define the Docker, Django, and MySQL architecture, including application structure, database organization, environment configuration, authentication interfaces, and deployment requirements. Security requirements will be incorporated during design rather than postponed until release.
+The technical team will define the Docker, Django, and MySQL architecture, including application structure, database organization, environment configuration, authentication interfaces, and deployment requirements. Security requirements will be incorporated during design rather than postponed until release. The team will use relevant NIST security and privacy controls for access control, identification and authentication, auditability, configuration management, and contingency planning. (Ross & Pillitteri, 2020).
 
 Development will proceed in increments. Core functionality will be demonstrated and tested as it becomes available. Feedback and defects will be evaluated against the approved requirements. Data migration and security work may proceed alongside development where dependencies permit. Integration and acceptance testing will verify that the components work together.
 
@@ -118,9 +126,9 @@ The following high-level work breakdown organizes the project into manageable ph
 
 ## Schedule and Milestones
 
-The project is planned to run from October 1 through December 30. Several activities overlap to support the delivery target. 
+The project is planned to run from October 1 through December 30. Several activities overlap to support the delivery target.
 
-xxxxxxxxxx graphic of gannt chart  
+![Project Gantt Chart](frosmear_gantt.png)
 
 | Project phase | Duration | Start | Completion | Major milestone or deliverable |
 |---|---|---|---|---|
@@ -149,7 +157,7 @@ The preliminary project budget is $210,000. This hypothetical corporate estimate
 | Contingency reserve | $30,000 |
 | **Total estimated budget** | **$210,000** |
 
-The contingency reserve is intended for approved responses to unforeseen risks, including legacy dependencies, migration problems, or additional testing. It is not an automatic spending allowance. The project manager and CFO will validate staffing assumptions, labor rates, hosting expenses, software costs, and vendor charges before finalizing the budget.
+The contingency reserve is intended for approved responses to unforeseen risks, including legacy dependencies, migration problems, or additional testing. It is not an automatic spending allowance. The project manager and CFO will validate staffing assumptions, labor rates, hosting expenses, software costs, and vendor charges before finalizing the budget. Infrastructure planning will include capacity, availability, power and cooling considerations, operational support, and the costs of maintaining the hosting environment, consistent with the project-management concerns associated with data-center projects (Rasmussen & Niles, 2019).
 
 ### Project Resources and Responsibilities
 
@@ -167,33 +175,56 @@ The contingency reserve is intended for approved responses to unforeseen risks, 
 | Cloud-provider representatives | Hosting and infrastructure guidance as needed. |
 
 ## Stakeholder Management and Communications
+
 Stakeholder engagement will reflect each participant's influence, interest, responsibilities, and required level of involvement. The project manager will compare current engagement with desired engagement and use targeted communication to address gaps.
 
-### Stakeholder Engagement Assessment
+![Stakeholder Listing](diagram.jpg)
 
-The five engagement levels are:
+### Stakeholder Engagement Levels
 
-- Unaware: The stakehol
-der does not know the project exists.
-- Resistant: The stakeholder does not want the project to succeed and may actively work against it.
-- Neutral: The stakeholder is indifferent to the project's success or failure.
-- Supportive: The stakeholder believes the project will provide benefits and wants it to succeed.
-- Leading: The stakeholder actively participates in ensuring project success.
+- **Unaware:** The stakeholder does not know the project exists.
+- **Resistant:** The stakeholder does not want the project to succeed and may actively work against it.
+- **Neutral:** The stakeholder is indifferent to the project's success or failure.
+- **Supportive:** The stakeholder believes the project will provide benefits and wants it to succeed.
+- **Leading:** The stakeholder actively participates in ensuring project success.
 
-Stakeholder	Role	Power / influence	Current engagement	Desired engagement	Management approach
-Glenda Schumann	CEO	High	Supportive	Leading	Provide executive briefings and involve her in key decisions and project advocacy.
-Zelda Hudson	CTO	High	Leading	Leading	Maintain executive coordination and provide timely information for technical decisions.
-Theresa Hudson	CFO	High	Neutral	Supportive	Provide cost estimates, budget forecasts, risk assessments, and return-on-investment analysis.
-Gordie Roberts	Director of Operations	Medium-high	Supportive	Leading	Involve him in transition planning, operational readiness reviews, and contingency planning.
-Jay Caufield	Legacy Systems Manager / LAME lead	Medium	Resistant	Supportive	Investigate concerns, involve him in legacy analysis and migration planning, and address knowledge-transfer concerns.
-Jim Paek	Lead Django/Darfcloud Developer	Medium	Leading	Leading	Keep him empowered and informed; involve him in technical decisions.
-Grant Jennings	Information Security Manager / PITA lead	Medium-high	Supportive	Leading	Include him in security architecture reviews, risk assessments, and production release approvals.
-Phil Bourque	AWS Account Manager	Medium	Supportive	Supportive	Maintain vendor coordination and clarify cloud-service expectations.
-Jamie Leach	Azure Account Manager	Medium	Neutral	Neutral	Provide appropriate vendor communications without prioritizing deeper engagement.
-Peter Taglianetti	Power-User Representative	Low formal power; high interest	Neutral	Supportive	Conduct user feedback sessions and communicate plans for preserving useful features and account data.
-Brad Aitken	Casual-User Representative	Low	Unaware	Supportive	Explain what is changing, why it is changing, and how users will be affected; provide feedback channels.
-Jeff Daniels	Investment-Tool Customer Representative	Low current power; moderate interest	Unaware	Supportive	Explain planned capabilities and gather prospective-customer requirements.
-Troy Loney	Shareholder Representative	High	Neutral	Supportive	Provide periodic project progress, financial performance, risk, and long-term value updates.
+### Stakeholder Engagement Assessment Matrix
+
+| Stakeholder | Unaware | Resistant | Neutral | Supportive | Leading |
+| ----------- | ------- | --------- | ------- | ---------- | ------- |
+| A           |         |           |         | C          | D       |
+| B           |         |           |         |            | C,D     |
+| C           |         |           | C       | D          |         |
+| D           |         |           |         | C          | D       |
+| E           |         | C         |         | D          |         |
+| F           |         |           |         |            | C,D     |
+| G           |         |           |         | C          | D       |
+| H           |         |           |         | C,D        |         |
+| I           |         |           | C,D     |            |         |
+| J           |         |           | C       | D          |         |
+| K           | C       |           |         | D          |         |
+| L           | C       |           |         | D          |         |
+| M           |         |           | C       | D          |         |
+
+### Stakeholder Key
+
+| Letter | Stakeholder       | Role                                    |
+| ------ | ----------------- | --------------------------------------- |
+| A      | Glenda Schumann   | CEO                                     |
+| B      | Zelda Hudson      | CTO                                     |
+| C      | Theresa Hudson    | CFO                                     |
+| D      | Gordie Roberts    | Director of Operations                  |
+| E      | Jay Caufield      | Legacy Systems Manager                  |
+| F      | Jim Paek          | Lead Django/Darfcloud Developer         |
+| G      | Grant Jennings    | Information Security Manager            |
+| H      | Phil Bourque      | AWS Account Manager                     |
+| I      | Jamie Leach       | Azure Account Manager                   |
+| J      | Peter Taglianetti | Power-User Representative               |
+| K      | Brad Aitken       | Casual-User Representative              |
+| L      | Jeff Daniels      | Investment-Tool Customer Representative |
+| M      | Troy Loney        | Shareholder Representative              |
+
+Legend: C = Current engagement; D = Desired engagement.
 
 The stakeholder names and assigned business roles are fictional characters created for this academic project. They do not represent actual involvement by the named individuals.
 
@@ -217,31 +248,25 @@ Risk management will identify potential problems, evaluate their likelihood and 
 
 ### SWOT Analysis
 
-xxxx  Copy stuff from m7 here
+![Project SWOT Analysis](frosmear_swot.png)
 
 The SWOT analysis should be reviewed with stakeholders through document reviews, brainstorming, interviews, and assumptions analysis. Its findings should be compared against the work breakdown to identify missing activities, validate assumptions, and determine whether additional planning is necessary.
 
-11.2 Probability and Severity Matrix
+### Probability and Severity Matrix
 
 The project uses a 3×3 matrix. Probability is classified as likely, possible, or unlikely. Severity is classified as negligible, moderate, or critical.
 
-Probability / severity	Negligible	Moderate	Critical
-Likely	Medium	High	High
-Possible	Low	Medium	High
-Unlikely	Low	Low	Medium
+| Probability / Severity | Negligible | Moderate | Critical |
+|---|---|---|---|
+| Likely | Medium | High | High |
+| Possible | Low | Medium | High |
+| Unlikely | Low | Low | Medium |
 
-xxxxx copy m7 stuff here
+![Project Risk Matrix](frosmear_risk_matrix.png)
 
 ### Project Risk Register
 
-| ID | Risk | Probability | Severity | Rating | Owner |
-|---|---|---|---|---|---|
-| R1 | Legacy PHP functionality may not integrate as expected with Darfcloud. | Likely | Critical | High | LAME lead |
-| R2 | Data migration may result in missing, inconsistent, or corrupted records. | Possible | Critical | High | LAME lead |
-| R3 | Authentication handoff may expose security vulnerabilities or block legitimate users. | Possible | Critical | High | PITA lead |
-| R4 | Development or integration defects may delay completion of the initial release. | Possible | Moderate | Medium | Project manager |
-| R5 | Security testing may identify authorization or data-protection weaknesses. | Possible | Moderate | Medium | PITA lead |
-| R6 | Noncritical hardware failures may require replacement without delaying the project. | Unlikely | Negligible | Low | Operations lead |
+![Project Risk Register](frosmear_risk_register.png)
 
 ## Risk Responses and Monitoring
 
@@ -261,15 +286,16 @@ The project manager will coordinate regular reviews, ensure risk owners provide 
 Testing will verify that the initial release meets its functional, technical, security, and operational requirements. The project team will complete testing before production release and document results and unresolved issues.
 
 Acceptance activities will include:
-Verification of required authentication and account-permission behavior.
-Validation of migrated account data.
-Testing of application navigation and agreed initial-release functionality.
-Integration testing between Darfcloud and required legacy components.
-Security testing of token handling, authorization, and access controls.
-Verification of database operations and data integrity.
-Deployment testing, including restart and recovery procedures.
-Review of application logs and resolution or formal acceptance of significant defects.
-User feedback and stakeholder acceptance.
+
+- Verification of required authentication and account-permission behavior.
+- Validation of migrated account data.
+- Testing of application navigation and agreed initial-release functionality.
+- Integration testing between Darfcloud and required legacy components.
+- Security testing of token handling, authorization, and access controls.
+- Verification of database operations and data integrity.
+- Deployment testing, including restart and recovery procedures.
+- Review of application logs and resolution or formal acceptance of significant defects.
+- User feedback and stakeholder acceptance.
 
 ## Maintenance and Project Closeout
 
@@ -288,8 +314,19 @@ The project has a $210,000 preliminary budget, a December 23, 2026 target delive
 The initial release will be successful when the agreed functionality is tested, accepted, deployed, and transferred to Operations with the documentation and procedures needed to maintain it. This will provide SHAT with a foundation for future Darfcloud applications and enhancements.
 
 ## References
+
 Association for Project Management. (2020). What is risk management?
-Maruping, L. M., Venkatesh, V., Thong, J. Y. L., & Zhang, X. (2019). A risk mitigation framework for information technology projects: A cultural contingency perspective. Journal of Management Information Systems, 36(1), 120–157. EBSCOhost article
+
+Maruping, L. M., Venkatesh, V., Thong, J. Y. L., & Zhang, X. (2019). A risk mitigation framework for information technology projects: A cultural contingency perspective. *Journal of Management Information Systems, 36*(1), 120–157. EBSCOhost article
+
 Peters, L. A. (2002). Eight planning strategies for delivering quality projects. Project Management Institute. https://www.pmi.org/learning/library/planning-strategies-delivering-quality-projects-1052
+
 Rasmussen, N., & Niles, S. (2019). Data center projects: Project management. Schneider Electric, Data Center Science Center. https://www.facilitiesnet.com/whitepapers/pdfs/APC_083011.pdf
+
+Project Management Institute. (2017). *Agile practice guide*. https://www.pmi.org/shop/p-/book/agile-practice-guide-%28english%29/00101602301
+
+Ross, R., & Pillitteri, V. (2020). *Security and privacy controls for information systems and organizations* (NIST Special Publication 800-53, Revision 5). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.SP.800-53r5
+
 Thomas, C. (n.d.). Five steps of the risk management process in 2025. 360Factors.
+
+
