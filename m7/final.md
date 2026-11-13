@@ -25,9 +25,9 @@ The project has a preliminary budget of $210,000 and a target delivery date of D
 
 ## Background and Project Justification
 
-[Frosmear.com](https://www.frosmear.com/) is a legacy PHP-based website that has become a foundation for a broader set of planned applications. Continuing to expand the existing system would preserve technical dependencies and make future development exponentially more time-consuming. Modernization provides an opportunity to establish a clean architecture, improve security and deployment practices, and create a platform that can support rapid new application development.
+[Frosmear.com](https://www.frosmear.com/) is a legacy PHP-based website that has become a foundation for a broader set of planned applications. Continuing to expand the existing system would preserve technical dependencies and make future development exponentially more time-consuming. Modernization provides an opportunity to establish a clean architecture, improve security and deployment practices, and create a platform that can support rapid application development.
 
-[Darfcloud](https://www.darfcloud.com/) will use Docker to package and deploy application services, Django as its web framework, and MySQL for relational data. These established technologies were selected for maintainability, long-term support, security, deployment flexibility, and compatibility with the existing environment. They also provide a foundation for future applications while keeping the new platform separate from the legacy PHP implementation.
+[Darfcloud](https://www.darfcloud.com/) will use Docker to package and deploy application services, Django as its web framework, and MySQL for relational data. These established technologies were selected for maintainability, long-term support, security, deployment flexibility, and compatibility with the existing environment. They provide a foundation for future applications while keeping the new platform separate from the legacy PHP implementation.
 
 Docker provides consistent packaging across development and deployment environments. Django offers an established application framework with built-in authentication capabilities, while MySQL stores account and application data. Together, these technologies replace the legacy foundation without carrying its implementation dependencies into the new platform.
 
@@ -279,7 +279,7 @@ The SWOT analysis should be reviewed with stakeholders through document reviews,
 | R5 | Monitor security testing and remediation. Assign corrective work and repeat testing to verify that significant weaknesses are resolved. |
 | R6 | Monitor critical equipment and replacement needs. Maintain an equipment inventory and arrange replacements through operational resources. |
 
-The project manager will coordinate regular reviews, ensure risk owners provide updates, and escalate risks that threaten project objectives. Consistent identification, analysis, response planning, and monitoring help project teams address uncertainty before it threatens delivery (Association for Project Management, 2020; Thomas, n.d.). Risk responses should also reflect the organizational and project context (Maruping et al., 2019).
+The project manager will coordinate regular reviews, ensure risk owners provide updates, and escalate risks that threaten project objectives. Consistent identification, analysis, response planning, and monitoring help project teams address uncertainty before it threatens delivery (Association for Project Management, 2020; Thomas, n.d.). Risk responses should reflect the organizational and project context (Maruping et al., 2019).
 
 {{PAGEBREAK}}
 ## Testing, Acceptance, and Deployment
