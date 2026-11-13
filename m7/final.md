@@ -33,9 +33,10 @@ Docker provides consistent packaging across development and deployment environme
 
 The project is not intended to deliver every future Darfcloud application. Its purpose is to establish the platform and complete the core functionality required for an initial release. Advanced AI capabilities, additional applications, and other enhancements will be considered for CY2027 and managed through a separate planning and approval process.
 
+{{PAGEBREAK}}
 ## Project Objectives and Success Criteria
 
-The project objectives are to:
+### The project objectives are to:
 
 - Establish the Darfcloud application platform using Docker, Django, and MySQL.
 - Implement the initial authentication, authorization, and application-navigation capabilities.
@@ -45,7 +46,7 @@ The project objectives are to:
 - Test application functionality, database operations, legacy integration, deployment, backup, and recovery procedures.
 - Deploy the initial release and transfer operational responsibility.
 
-The project will be considered successful when:
+### The project will be considered successful when:
 
 - The initial-release functionality is available on the Darfcloud platform.
 - Required account data is migrated and validated.
@@ -54,11 +55,10 @@ The project will be considered successful when:
 - Deployment, backup, and recovery procedures are tested and documented.
 - The project sponsor and designated stakeholders accept the completed deliverables.
 
+{{PAGEBREAK}}
 ## Project Scope
 
-### In Scope
-
-The initial project scope includes:
+### The initial project scope includes:
 
 - Assessment of the existing Frosmear PHP application and its dependencies.
 - Requirements analysis and identification of functionality to preserve.
@@ -72,9 +72,7 @@ The initial project scope includes:
 - Backup and recovery validation.
 - User feedback, stakeholder acceptance, documentation, and operational handoff.
 
-## Out of Scope
-
-The following items are not part of the initial release unless approved through formal change control:
+### The following items are out of scope:
 
 - Advanced artificial intelligence applications.
 - New investment-analysis products beyond the platform foundation and agreed initial functionality.
@@ -82,13 +80,11 @@ The following items are not part of the initial release unless approved through 
 - Unrelated redesign or replacement of legacy functionality that is not required for the agreed release.
 - Ongoing maintenance and enhancements after the initial operational transition.
 
-## Scope Management and Change Control
+### Scope Management and Change Control
 
 The project manager will maintain the approved scope, schedule, and budget baselines. Requirements and deliverables will have measurable acceptance criteria. Stakeholder suggestions and discoveries made during development will be documented and evaluated rather than automatically added to the project.
 
-Each change request must describe the requested change and its expected effect on scope, schedule, budget, resources, security, technical dependencies, and business value.
-
-The project manager will coordinate the assessment with the appropriate leads:
+Each change request must describe the requested change and its expected effect on scope, schedule, budget, resources, security, technical dependencies, and business value. The project manager will coordinate the assessment with the appropriate leads:
 
 - The CTO will assess architecture and technical impacts.
 - LAME will assess legacy compatibility and migration impacts.
@@ -98,48 +94,49 @@ The project manager will coordinate the assessment with the appropriate leads:
 
 The project sponsor must approve significant changes to the project baselines. Essential security controls will not be removed simply to protect the schedule. If a required change threatens the delivery target, the project manager will present the impact and recommend an appropriate adjustment or deferral of nonessential functionality.
 
+{{PAGEBREAK}}
 ## Project Management and Development Approach
 
-A hybrid project management approach is appropriate because the project requires defined commitments while involving technical uncertainty. Predictive planning will establish the project charter, scope, budget, schedule, major deliverables, responsibilities, and change-control process. Iterative development will allow the team to implement and validate functionality in increments. This combination reflects the hybrid life-cycle approach described by the Project Management Institute (PMI, 2017), in which predictive and agile practices can be selected to fit a project's characteristics rather than forcing every activity into a single method.
+A hybrid project management approach is appropriate because the project requires defined commitments while involving technical uncertainty. Predictive planning will establish the project charter, scope, budget, schedule, deliverables, responsibilities, and change control. Iterative development will allow the team to implement and validate functionality in increments. This reflects PMI’s (2017) hybrid life-cycle approach, which combines predictive and agile practices to fit a project's characteristics.
 
-The project will begin with requirements analysis and assessment of the existing Frosmear application. The team will identify functionality to preserve, data to migrate, and dependencies between the legacy PHP application and Darfcloud.
+The project will begin with requirements analysis and assessment of the existing Frosmear application. The team will identify functionality to preserve, data to migrate, and dependencies between the legacy PHP application and Darfcloud. The technical team will define the Docker, Django, and MySQL architecture, including application structure, database organization, environment configuration, authentication, and deployment. Security will be incorporated during design using relevant NIST controls for access, authentication, auditing, configuration management, and contingency planning (Ross & Pillitteri, 2020).
 
-The technical team will define the Docker, Django, and MySQL architecture, including application structure, database organization, environment configuration, authentication interfaces, and deployment requirements. Security requirements will be incorporated during design rather than postponed until release. The team will use relevant NIST security and privacy controls for access control, identification and authentication, auditability, configuration management, and contingency planning. (Ross & Pillitteri, 2020).
+Development will proceed in increments, with core functionality demonstrated and tested as it becomes available. Feedback and defects will be evaluated against approved requirements. Data migration and security work will proceed alongside development where possible, followed by integration and acceptance testing.
 
-Development will proceed in increments. Core functionality will be demonstrated and tested as it becomes available. Feedback and defects will be evaluated against the approved requirements. Data migration and security work may proceed alongside development where dependencies permit. Integration and acceptance testing will verify that the components work together.
+This approach balances planning with adaptation, allowing the team to respond to implementation findings while remaining accountable for deliverables, schedule, and budget.
 
-This approach provides a balance between planning and adaptation. The team can respond to information discovered during implementation while maintaining accountability for the agreed deliverables, schedule, and budget.
-
+{{PAGEBREAK}}
 ## Work Breakdown and Major Deliverables
 
-The following high-level work breakdown organizes the project into manageable phases and deliverables.
-
-| Work package | Major activities | Principal deliverables |
+| Phase | Major activities | Principal deliverables |
 |---|---|---|
-| 1. Project planning | Confirm objectives, requirements, stakeholders, resources, budget, schedule, and governance | Project charter and management baselines |
-| 2. Current-system assessment | Inventory legacy PHP functionality, dependencies, data, and integration requirements | Legacy inventory, requirements, migration assessment |
-| 3. Architecture and environments | Define Docker/Django/MySQL architecture, environment standards, and security requirements | Architecture and environment specifications |
-| 4. Application development | Implement authentication, permissions, application navigation, and required legacy integration | Tested initial-release application components |
-| 5. Data migration and security | Map and migrate required account data; implement and review security controls | Validated migrated data and security controls |
-| 6. Testing and deployment | Perform functional, integration, security, and deployment testing; prepare operational handoff | Test results, deployment, backup and recovery procedures |
-| 7. Project closeout | Obtain acceptance, complete documentation, transfer responsibilities, and record lessons learned | Acceptance record, operational documentation, closeout report |
+| Project planning | Confirm objectives, requirements, stakeholders, resources, budget, schedule, and governance | Project charter and management baselines |
+| Current-system assessment | Inventory legacy PHP functionality, dependencies, data, and integration requirements | Legacy inventory, requirements, migration assessment |
+| Architecture and environments | Define Docker/Django/MySQL architecture, environment standards, and security requirements | Architecture and environment specifications |
+| Application development | Implement authentication, permissions, application navigation, and required legacy integration | Tested initial-release application components |
+| Data migration and security | Map and migrate required account data; implement and review security controls | Validated migrated data and security controls |
+| Testing and deployment | Perform functional, integration, security, and deployment testing; prepare operational handoff | Test results, deployment, backup and recovery procedures |
+| Project closeout | Obtain acceptance, complete documentation, transfer responsibilities, and record lessons learned | Acceptance record, operational documentation, closeout report |
 
+{{PAGEBREAK}}
 ## Schedule and Milestones
 
 The project is planned to run from October 1 through December 30. Several activities overlap to support the delivery target.
 
-![Project Gantt Chart](frosmear_gantt.png)
+![Figure 1: Gantt chart displaying project schedule and milestone activities.](frosmear_gantt.png)
 
+{{PAGEBREAK}}
 | Project phase | Duration | Start | Completion | Major milestone or deliverable |
 |---|---|---|---|---|
-| 1. Planning | 2 weeks | October 1, 2026 | October 16, 2026 | Project charter, scope, budget, schedule, stakeholder plan |
-| 2. Current-system assessment | 2 weeks | October 12, 2026 | October 23, 2026 | Legacy inventory, requirements, migration assessment, compatibility review |
-| 3. Architecture and environments | 2 weeks | October 19, 2026 | October 30, 2026 | Docker/Django/MySQL architecture, environment standards, security requirements |
-| 4. Application development | 4 weeks | October 19, 2026 | November 20, 2026 | Authentication, permissions, application menu, legacy integration |
-| 5. Data migration and security | 3 weeks | November 2, 2026 | December 4, 2026 | Migrated accounts, provisioning, compatibility validation, security controls, backup and recovery procedures |
-| 6. Testing and deployment | 2 weeks | November 23, 2026 | December 18, 2026 | Functional, security, and integration testing; deployment; operational handoff |
-| 7. Project closeout | 2 weeks | December 7, 2026 | December 30, 2026 | Acceptance, documentation, lessons learned, maintenance plan |
+| Planning | 2 weeks | October 1 | October 16 | Project charter, scope, budget, schedule, stakeholder plan |
+| Current-system assessment | 2 weeks | October 12 | October 23 | Legacy inventory, requirements, migration assessment, compatibility review |
+| Architecture and environments | 2 weeks | October 19 | October 30 | Docker/Django/MySQL architecture, environment standards, security requirements |
+| Application development | 4 weeks | October 19 | November 20 | Authentication, permissions, application menu, legacy integration |
+| Data migration and security | 3 weeks | November 2 | December 4 | Migrated accounts, provisioning, compatibility validation, security controls, backup and recovery procedures |
+| Testing and deployment | 2 weeks | November 23 | December 18 | Functional, security, and integration testing; deployment; operational handoff |
+| Project closeout | 2 weeks | December 7 | December 30 | Acceptance, documentation, lessons learned, maintenance plan |
 
+{{PAGEBREAK}}
 ## Budget and Resource Allocation
 
 The preliminary project budget is $210,000. This hypothetical corporate estimate assumes an experienced team, coordinated parallel work, and a defined initial release. It is a planning estimate rather than an approved budget or vendor quotation.
@@ -159,6 +156,7 @@ The preliminary project budget is $210,000. This hypothetical corporate estimate
 
 The contingency reserve is intended for approved responses to unforeseen risks, including legacy dependencies, migration problems, or additional testing. It is not an automatic spending allowance. The project manager and CFO will validate staffing assumptions, labor rates, hosting expenses, software costs, and vendor charges before finalizing the budget. Infrastructure planning will include capacity, availability, power and cooling considerations, operational support, and the costs of maintaining the hosting environment, consistent with the project-management concerns associated with data-center projects (Rasmussen & Niles, 2019).
 
+{{PAGEBREAK}}
 ### Project Resources and Responsibilities
 
 | Stakeholder | Role and responsibilities |
@@ -174,11 +172,12 @@ The contingency reserve is intended for approved responses to unforeseen risks, 
 | User representatives | Usability feedback, workflow validation, and acceptance testing. |
 | Cloud-provider representatives | Hosting and infrastructure guidance as needed. |
 
+{{PAGEBREAK}}
 ## Stakeholder Management and Communications
 
 Stakeholder engagement will reflect each participant's influence, interest, responsibilities, and required level of involvement. The project manager will compare current engagement with desired engagement and use targeted communication to address gaps.
 
-![Stakeholder Listing](diagram.jpg)
+![Figure 2: Project stakeholders with projected engagement levels.](diagram.jpg)
 
 ### Stakeholder Engagement Levels
 
@@ -242,31 +241,29 @@ The project manager will use a combination of status reports, milestone reviews,
 | User representatives | Demonstrations, workflow reviews, and acceptance testing | Validate usability and required functionality |
 | Shareholder representative | Periodic progress, risk, financial performance, and expected value | Maintain visibility into project performance |
 
+{{PAGEBREAK}}
 ## Risk Management
 
 Risk management will identify potential problems, evaluate their likelihood and impact, assign ownership, and establish appropriate responses. The project manager will coordinate regular risk reviews and update the risk register as conditions change.
 
 ### SWOT Analysis
 
-![Project SWOT Analysis](frosmear_swot.png)
+![Figure 3: Visual diagram of the Strength, Weakness, Opportunities and Threats Analysis](frosmear_swot.png)
 
 The SWOT analysis should be reviewed with stakeholders through document reviews, brainstorming, interviews, and assumptions analysis. Its findings should be compared against the work breakdown to identify missing activities, validate assumptions, and determine whether additional planning is necessary.
 
 ### Probability and Severity Matrix
-
-The project uses a 3×3 matrix. Probability is classified as likely, possible, or unlikely. Severity is classified as negligible, moderate, or critical.
 
 | Probability / Severity | Negligible | Moderate | Critical |
 |---|---|---|---|
 | Likely | Medium | High | High |
 | Possible | Low | Medium | High |
 | Unlikely | Low | Low | Medium |
-
-![Project Risk Matrix](frosmear_risk_matrix.png)
+![Figure 4: Colored coded matrix of project risks.](frosmear_risk_matrix.png)
 
 ### Project Risk Register
 
-![Project Risk Register](frosmear_risk_register.png)
+![Figure 5: Project Risk Register](frosmear_risk_register.png)
 
 ## Risk Responses and Monitoring
 
@@ -281,11 +278,10 @@ The project uses a 3×3 matrix. Probability is classified as likely, possible, o
 
 The project manager will coordinate regular reviews, ensure risk owners provide updates, and escalate risks that threaten project objectives. Consistent identification, analysis, response planning, and monitoring help project teams address uncertainty before it threatens delivery (Association for Project Management, 2020; Thomas, n.d.). Risk responses should also reflect the organizational and project context (Maruping et al., 2019).
 
+{{PAGEBREAK}}
 ## Testing, Acceptance, and Deployment
 
-Testing will verify that the initial release meets its functional, technical, security, and operational requirements. The project team will complete testing before production release and document results and unresolved issues.
-
-Acceptance activities will include:
+Testing will verify that the initial release meets its functional, technical, security, and operational requirements. The project team will complete testing before production release and document results and unresolved issues. Acceptance activities will include:
 
 - Verification of required authentication and account-permission behavior.
 - Validation of migrated account data.
@@ -305,6 +301,7 @@ Ongoing responsibilities will include system monitoring, security updates, backu
 
 Closeout will include formal acceptance, technical and operational documentation, transfer of responsibilities, and a lessons-learned review. The project manager will document unresolved issues and recommendations for future development. Ongoing maintenance and 2027 enhancements will be managed separately from the initial implementation budget and schedule.
 
+{{PAGEBREAK}}
 ## Conclusion
 
 The Frosmear Legacy Modernization project will establish Darfcloud as a maintainable application platform using Docker, Django, and MySQL. A hybrid management approach provides structure for the project's scope, schedule, budget, stakeholder responsibilities, and risk controls while allowing iterative development and feedback.
@@ -313,6 +310,7 @@ The project has a $210,000 preliminary budget, a December 23, 2026 target delive
 
 The initial release will be successful when the agreed functionality is tested, accepted, deployed, and transferred to Operations with the documentation and procedures needed to maintain it. This will provide SHAT with a foundation for future Darfcloud applications and enhancements.
 
+{{PAGEBREAK}}
 ## References
 
 Association for Project Management. (2020). What is risk management?
