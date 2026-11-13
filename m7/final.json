@@ -1,8 +1,7 @@
 
 {
-    "input": "m7/final.md",
-    "output": "m7/final.docx",
-    "template": "apa-reference.docx",
+    "input": "final.md",
+    "output": "final.docx",
     "apa": {
         "title": "Portfolio Project - Darfcloud Modernization",
         "student": "Mike Hudson",
