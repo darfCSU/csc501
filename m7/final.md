@@ -187,6 +187,7 @@ Stakeholder engagement will reflect each participant's influence, interest, resp
 - **Supportive:** The stakeholder believes the project will provide benefits and wants it to succeed.
 - **Leading:** The stakeholder actively participates in ensuring project success.
 
+{{PAGEBREAK}}
 ### Stakeholder Engagement Assessment Matrix
 
 | Stakeholder | Unaware | Resistant | Neutral | Supportive | Leading |
@@ -205,6 +206,7 @@ Stakeholder engagement will reflect each participant's influence, interest, resp
 | L           | C       |           |         | D          |         |
 | M           |         |           | C       | D          |         |
 
+{{PAGEBREAK}}
 ### Stakeholder Key
 
 | Letter | Stakeholder       | Role                                    |
@@ -227,6 +229,7 @@ Legend: C = Current engagement; D = Desired engagement.
 
 The stakeholder names and assigned business roles are fictional characters created for this academic project. They do not represent actual involvement by the named individuals.
 
+{{PAGEBREAK}}
 ### Communication Plan
 
 The project manager will use a combination of status reports, milestone reviews, demonstrations, issue escalation, and targeted stakeholder discussions.
@@ -259,12 +262,12 @@ The SWOT analysis should be reviewed with stakeholders through document reviews,
 | Likely | Medium | High | High |
 | Possible | Low | Medium | High |
 | Unlikely | Low | Low | Medium |
+
 ![Figure 4: Colored coded matrix of project risks.](frosmear_risk_matrix.png)
-
+{{PAGEBREAK}}
 ### Project Risk Register
-
 ![Figure 5: Project Risk Register](frosmear_risk_register.png)
-
+{{PAGEBREAK}}
 ## Risk Responses and Monitoring
 
 | ID | Response |
